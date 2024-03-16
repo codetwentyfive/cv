@@ -6,8 +6,10 @@ import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { RESUME_DATA } from "@/data/resume-data";
+import { RESUME_DATA } from "@/data/resume-data-en";
 import { ProjectCard } from "@/components/project-card";
+
+
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} `,
@@ -82,11 +84,6 @@ export default function Page() {
                   <span className="underline">{RESUME_DATA.contact.tel}</span>
                 </a>
               ) : null}
-                       {RESUME_DATA.personalWebsiteUrl ? (
-                <a href={RESUME_DATA.personalWebsiteUrl}>
-                  <span className="underline">{RESUME_DATA.personalWebsiteUrl}</span>
-                </a>
-              ) : null}
             </div>
           </div>
 
@@ -96,7 +93,7 @@ export default function Page() {
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">Programmier Kenntnisse:</h2>
+          <h2 className="text-xl font-bold">Programming Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
@@ -107,7 +104,7 @@ export default function Page() {
         <div className="grid grid-flow-col">
           <Section>
             <div>
-              <h2 className="py-2 text-xl font-bold">Kenntnisse und Fähigkeiten:</h2>
+              <h2 className="py-2 text-xl font-bold">other Skills:</h2>
               <div className="flex  flex-col flex-wrap gap-1">
                 {RESUME_DATA.otherSkills.map((otherSkill) => {
                   return (
@@ -122,7 +119,7 @@ export default function Page() {
 
           <Section>
             <div>
-              <h2 className="py-2 text-xl font-bold">Sprachen:</h2>
+              <h2 className="py-2 text-xl font-bold">Languages:</h2>
               <div className="flex  flex-col  gap-1">
                 {RESUME_DATA.languages.map((languages) => {
                   return (
@@ -145,7 +142,7 @@ export default function Page() {
         </div>
 
         <Section>
-          <h2 className="text-xl font-bold">Beruflicher Werdegang:</h2>
+          <h2 className="text-xl font-bold">Work Experience:</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
@@ -190,7 +187,7 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Erfahrungen:</h2>
+          <h2 className="text-xl font-bold">Experiences:</h2>
           {RESUME_DATA.experience.map((experience) => {
             return (
               <Card key={experience.company}>
@@ -235,7 +232,7 @@ export default function Page() {
           })}
         </Section>
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className=" text-xl font-bold">Ausbildung:</h2>
+          <h2 className=" text-xl font-bold">Education:</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>

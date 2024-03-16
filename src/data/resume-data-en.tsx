@@ -24,8 +24,7 @@ export const RESUME_DATA = {
   initials: "CE",
   location: "Karlsruhe, Deutschland, CET",
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
-  avatarUrl:
-    "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1715817600&v=beta&t=RQ6wY7PKLit1a7Kin1U7SE6d1GGXPmIdZN75Y6gtqB8",
+  avatarUrl: "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1715817600&v=beta&t=RQ6wY7PKLit1a7Kin1U7SE6d1GGXPmIdZN75Y6gtqB8",
   personalWebsiteUrl: "https://chingis-portfolio-3d.vercel.app/",
   contact: {
     email: "chingisenkhbaatar@gmail.com",
@@ -66,18 +65,27 @@ export const RESUME_DATA = {
     "Bash",
   ],
   otherSkills: [
-    "Visuelle Präsentation und Kommunikation",
-    "Business Englisch",
+    "Presentation and Visualization",
+    "Business English",
     "MS Office",
     "Sound Design",
     "Photoshop",
+    
   ],
   languages: [
-    { language: "Deutsch", proficiency: "Muttersprache" },
-    { language: "Mongolisch", proficiency: "Muttersprache" },
-    { language: "Englisch", proficiency: "Verhandlungssicher" },
-    { language: "Französisch", proficiency: "Grundkenntnisse" },
-    { language: "Latein", proficiency: "Grundkenntnisse" },
+
+    {language:"German",
+  proficiency:"native"},
+  {language:"Mongolian",
+  proficiency:"native"},
+  {language:"English",
+  proficiency:"fluent"},
+  {language:"French",
+  proficiency:"novice"},
+  {language:"Latin",
+  proficiency:"novice"},
+    
+    
   ],
   education: [
     {
@@ -87,19 +95,19 @@ export const RESUME_DATA = {
       end: "2024",
     },
     {
-      school: "Universität von Passau",
-      degree: "Kulturwirschaftwissenschaften -(nicht abgeschlossen)",
+      school: "University of Passau",
+      degree: "Completed coursework in various cultural economics subjects",
       start: "2016",
       end: "2019",
     },
     {
-      school: "Ludwig Maximilian Universität, München",
-      degree: "Jura -(nicht abgeschlossen)",
+      school: "Ludwig Maximilian University of Munich",
+      degree: "Completed coursework in various legal subjects",
       start: "2013",
       end: "2016",
     },
     {
-      school: "Studienkolleg München",
+      school: "Studienkolleg Munich",
       degree: "Studienkolleg Abschlussprüfung",
       start: "2011",
       end: "2012",
@@ -109,23 +117,23 @@ export const RESUME_DATA = {
     {
       company: "Homecare",
       link: "",
-      badges: ["Organisation und Kommunikation"],
-      title: "Betreuer",
+      badges: ["Caretaker"],
+      title: "Guardian",
       start: "2022",
       end: "now",
       description:
-        "Verwaltung der täglichen Angelegenheiten, des Wohlergehens, Organisation in den Bereichen Haushaltsführung, Finanzen  und Verwaltungsaufgaben.",
+        "Managing the daily affairs,well-being and taking on responsibilities in household management, financial oversight, and administrative tasks.",
     },
 
     {
       company: "Apples & Berries",
       link: "",
-      badges: ["Reperatur & Verkauf"],
+      badges: ["Repair & Sales"],
       title: "Chief Operator ",
       start: "2018",
       end: "2019",
       description:
-        "Verantwortlich für den Laden, Schulung neuer Mitarbeiter und Reparatur verschiedener Geräte von Telefonen über Tablets bis hin zu Laptops.",
+        "In charge of the store,training new staff and repair of various devices ranging from phones to tablets & laptops",
     },
   ],
   experience: [
@@ -133,23 +141,22 @@ export const RESUME_DATA = {
       company: "Driving the human",
       link: " https://2021.rca.ac.uk/students/andra-pop-jurj/",
       badges: ["Sound Design"],
-      title: "Sound Designer",
-      start: "2020",
-      end: "2021",
-
+      title: "Sound designer",
+      start: "2020",  end: "2021",
+      
       description:
-        "Entwickelte als Sound Designer, eine einzigartige Klangkulisse für die frühen Phasen des Projekts 'Monsters and Ghosts of the Far North', die später in verschiedenen Ausstellungen im ganzen Land präsentiert wurden.",
+        "Crafted a unique sound stage for the early stages of the project Monsters and Ghosts of the Far North, which later went on to be featured in various exhibitions across the country  ",
     },
 
     {
-      company: "Mongolische Spracholympiade",
+      company: "Mongolian National Linguistic Olympiad",
       link: "",
-      badges: ["3x Sieger,1x Zweiter"],
-      title: "Lingust/Schüler",
+      badges: ["3x Winner,1x Second"],
+      title: "Lingust",
       start: "2010",
       end: "2013",
       description:
-        "Nahm erfolgreich an diversen Spracholympiaden während meiner Schulzeit teil.",
+        "Competed and won various german and english language olympiads during my school days",
     },
   ],
 
@@ -171,5 +178,6 @@ export const RESUME_DATA = {
         href: "",
       },
     },
+
   ],
 } as const;
