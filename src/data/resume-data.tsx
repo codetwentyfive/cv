@@ -24,11 +24,7 @@ export const RESUME_DATA = {
   initials: "CE",
   location: "Karlsruhe, Deutschland, CET",
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
-  about:
-    "Full Stack Developer driven by a genuine curiosity for emerging technologies,bringing a fresh and innovative approach to every project ",
-  summary:
-    "Dedicated and detail-oriented, aspiring to build a dynamic career in web development with expertise in both front-end and back-end. Possess a strong foundation in HTML, CSS, and JavaScript, coupled with experience in modern frameworks such as React for front-end development and Node.js for back-end development. Adept at creating responsive and user-friendly web applications.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/95729939?v=4",
+  avatarUrl: "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1715817600&v=beta&t=RQ6wY7PKLit1a7Kin1U7SE6d1GGXPmIdZN75Y6gtqB8",
   personalWebsiteUrl: "https://chingis-portfolio-3d.vercel.app/",
   contact: {
     email: "chingisenkhbaatar@gmail.com",
@@ -51,6 +47,46 @@ export const RESUME_DATA = {
       },*/
     ],
   },
+  skills: [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "TypeScript",
+    "React",
+    "Node.js",
+    "MongoDB",
+    "three.js",
+    "NPM",
+    "Webpack",
+    "Parcel",
+    "Jest",
+    "Git",
+    "Github",
+    "Bash",
+  ],
+  otherSkills: [
+    "Presentation and Visualization",
+    "Business English",
+    "MS Office",
+    "Sound Design",
+    "Photoshop",
+    
+  ],
+  languages: [
+
+    {language:"German",
+  proficiency:"native"},
+  {language:"Mongolian",
+  proficiency:"native"},
+  {language:"English",
+  proficiency:"fluent"},
+  {language:"French",
+  proficiency:"novice"},
+  {language:"Latin",
+  proficiency:"novice"},
+    
+    
+  ],
   education: [
     {
       school: "The Odin Project",
@@ -70,6 +106,12 @@ export const RESUME_DATA = {
       start: "2013",
       end: "2016",
     },
+    {
+      school: "Studienkolleg Munich",
+      degree: "Studienkolleg Abschlussprüfung",
+      start: "2011",
+      end: "2012",
+    },
   ],
   work: [
     {
@@ -80,7 +122,7 @@ export const RESUME_DATA = {
       start: "2022",
       end: "now",
       description:
-        "Managing the daily affairs and well-being of my fatherfigure, taking on responsibilities in household management, financial oversight, and administrative tasks.",
+        "Managing the daily affairs,well-being and taking on responsibilities in household management, financial oversight, and administrative tasks.",
     },
 
     {
@@ -91,26 +133,33 @@ export const RESUME_DATA = {
       start: "2018",
       end: "2019",
       description:
-        "in charge of the store,training new staff and repair of various devices ranging from phones to tablets & laptops",
+        "In charge of the store,training new staff and repair of various devices ranging from phones to tablets & laptops",
     },
   ],
-  skills: [
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "TypeScript",
-    "React",
-    "Node.js",
-    "MongoDB",
-    "three.js",
-    "NPM",
-    "Webpack",
-    "Parcel",
-    "Jest",
-    "Git",
-    "Github",
-    "Bash",
+  experience: [
+    {
+      company: "Driving the human",
+      link: " https://2021.rca.ac.uk/students/andra-pop-jurj/",
+      badges: ["Sound Design"],
+      title: "Sound designer",
+      start: "2020",  end: "2021",
+      
+      description:
+        "Crafted a unique sound stage for the early stages of the project Monsters and Ghosts of the Far North, which later went on to be featured in various exhibitions across the country  ",
+    },
+
+    {
+      company: "Mongolian National Linguistic Olympiad",
+      link: "",
+      badges: ["3x Winner,1x Second"],
+      title: "Lingust",
+      start: "2010",
+      end: "2013",
+      description:
+        "Competed and won various german and english language olympiads during my school days",
+    },
   ],
+
   projects: [
     {
       title: "",
