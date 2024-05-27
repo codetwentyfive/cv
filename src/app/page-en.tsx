@@ -9,11 +9,8 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data-en";
 import { ProjectCard } from "@/components/project-card";
 
-
-
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} `,
-  
 };
 
 export default function Page() {
@@ -23,7 +20,7 @@ export default function Page() {
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
-     
+
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
               <a
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
@@ -92,6 +89,51 @@ export default function Page() {
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
           </Avatar>
         </div>
+
+        <Section>
+          <h2 className="text-xl font-bold">Work Experience:</h2>
+          {RESUME_DATA.work.map((work) => {
+            return (
+              <Card key={work.company}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                      <a
+                        className={work.link ? "hover:underline" : "hover:none"}
+                        href={work.link || "#"}
+                      >
+                        {work.company}
+                      </a>
+
+                      <span className="inline-flex gap-x-1">
+                        {work.badges.map((badge) => (
+                          <Badge
+                            variant="secondary"
+                            className="align-middle text-xs"
+                            key={badge}
+                          >
+                            {badge}
+                          </Badge>
+                        ))}
+                      </span>
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {work.start} - {work.end}
+                    </div>
+                  </div>
+
+                  <h4 className="font-mono text-sm leading-none">
+                    {work.title}
+                  </h4>
+                </CardHeader>
+                <CardContent className="mt-2 text-xs">
+                  {work.description}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+
         <Section>
           <h2 className="text-xl font-bold">Programming Skills</h2>
           <div className="flex flex-wrap gap-1">
@@ -141,51 +183,6 @@ export default function Page() {
           </Section>
         </div>
 
-        <Section>
-          <h2 className="text-xl font-bold">Work Experience:</h2>
-          {RESUME_DATA.work.map((work) => {
-            return (
-              <Card key={work.company}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                    <a
-                        className={
-                          work.link ? "hover:underline" : "hover:none"
-                        }
-                        href={work.link || "#"}
-                      >
-                        {work.company}
-                      </a>
-
-                      <span className="inline-flex gap-x-1">
-                        {work.badges.map((badge) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs"
-                            key={badge}
-                          >
-                            {badge}
-                          </Badge>
-                        ))}
-                      </span>
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {work.start} - {work.end}
-                    </div>
-                  </div>
-
-                  <h4 className="font-mono text-sm leading-none">
-                    {work.title}
-                  </h4>
-                </CardHeader>
-                <CardContent className="mt-2 text-xs">
-                  {work.description}
-                </CardContent>
-              </Card>
-            );
-          })}
-        </Section>
         <Section>
           <h2 className="text-xl font-bold">Experiences:</h2>
           {RESUME_DATA.experience.map((experience) => {

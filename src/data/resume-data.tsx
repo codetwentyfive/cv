@@ -16,19 +16,20 @@ import {
   ParabolLogo,
   TastyCloudLogo,
   YearProgressLogo,
+  PuzzleLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Chingis Enkhbaatar",
-  initials: "CE",
+  name: "Chingis Zwecker E.",
+  initials: "CZ",
   location: "Karlsruhe, Deutschland, CET",
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
   avatarUrl:
-    "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1715817600&v=beta&t=RQ6wY7PKLit1a7Kin1U7SE6d1GGXPmIdZN75Y6gtqB8",
-  personalWebsiteUrl: "https://chingis-portfolio-3d.vercel.app/",
+    "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1722470400&v=beta&t=cUBRWRurwicWmdylqkGO42S2fvOjTyfIzW3D9r1Z-uE",
+  personalWebsiteUrl: "https://chingis.dev",
   contact: {
-    email: "chingisenkhbaatar@gmail.com",
+    email: "chingiszwecker@gmail.com",
     tel: "+4915735203036",
     social: [
       {
@@ -38,7 +39,7 @@ export const RESUME_DATA = {
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/chingis-enkhbaatar/",
+        url: "https://www.linkedin.com/in/chingis-zwecker/",
         icon: LinkedInIcon,
       },
       /*{
@@ -53,9 +54,13 @@ export const RESUME_DATA = {
     "HTML",
     "CSS",
     "TypeScript",
+    "Angular",
     "React",
     "Node.js",
     "MongoDB",
+    "PHP",
+    "MySQL",
+    "Express.js",
     "three.js",
     "NPM",
     "Webpack",
@@ -71,6 +76,7 @@ export const RESUME_DATA = {
     "MS Office",
     "Sound Design",
     "Photoshop",
+    "Excel",
   ],
   languages: [
     { language: "Deutsch", proficiency: "Muttersprache" },
@@ -88,13 +94,13 @@ export const RESUME_DATA = {
     },
     {
       school: "Universität von Passau",
-      degree: "Kulturwirschaftwissenschaften -(nicht abgeschlossen)",
+      degree: "Kulturwirschaftwissenschaften",
       start: "2016",
       end: "2019",
     },
     {
       school: "Ludwig Maximilian Universität, München",
-      degree: "Jura -(nicht abgeschlossen)",
+      degree: "Jura",
       start: "2013",
       end: "2016",
     },
@@ -113,8 +119,10 @@ export const RESUME_DATA = {
       title: "Betreuer",
       start: "2022",
       end: "now",
-      description:
-        "Verwaltung der täglichen Angelegenheiten, des Wohlergehens, Organisation in den Bereichen Haushaltsführung, Finanzen  und Verwaltungsaufgaben.",
+      description: [
+        `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens.
+  -Organisation in den Bereichen Haushaltsführung, Finanzen und Verwaltungsaufgaben.`,
+      ],
     },
 
     {
@@ -122,10 +130,13 @@ export const RESUME_DATA = {
       link: "",
       badges: ["Reperatur & Verkauf"],
       title: "Chief Operator ",
-      start: "2018",
+      start: "2017",
       end: "2019",
-      description:
-        "Verantwortlich für den Laden, Schulung neuer Mitarbeiter und Reparatur verschiedener Geräte von Telefonen über Tablets bis hin zu Laptops.",
+      description: `-Schulung neuer Teammitglieder.
+        -Reparatur verschiedener Geräte, einschließlich Telefone, Tablets und Laptops.
+        -Entwicklung und Umsetzung von Verkaufsstrategien.
+    
+    `,
     },
   ],
   experience: [
@@ -137,38 +148,96 @@ export const RESUME_DATA = {
       start: "2020",
       end: "2021",
 
-      description:
-        "Entwickelte als Sound Designer, eine einzigartige Klangkulisse für die frühen Phasen des Projekts 'Monsters and Ghosts of the Far North', die später in verschiedenen Ausstellungen im ganzen Land präsentiert wurden.",
+      description: `-Entwicklung einer einzigartigen Klangkulisse für das Projekt 'Monsters and Ghosts of the Far North'.
+        -Präsentation der Arbeiten in verschiedenen Ausstellungen landesweit.`,
     },
 
     {
       company: "Mongolische Spracholympiade",
       link: "",
       badges: ["3x Sieger,1x Zweiter"],
-      title: "Lingust/Schüler",
+      title: "Teilnehmer und Sieger",
       start: "2010",
       end: "2013",
       description:
-        "Nahm erfolgreich an diversen Spracholympiaden während meiner Schulzeit teil.",
+        "-Dreifacher Sieger und einmal Zweiter in diversen Spracholympiaden.",
     },
   ],
 
   projects: [
     {
-      title: "",
+      title: "Yu-Gi-Oh! Card Memory",
       techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "Python",
+        "React",
       ],
-      description: "",
+      description: `Ein Memory-Spiel programmiert mit ikonischen und lustigen Yu-Gi-Oh! Karten`,
+      logo: PuzzleLogo,
+      link: {
+        label: "",
+        href: "https://yugioh-memorygame.vercel.app/",
+      },
+    },
+    {
+      title: "Altan Mountain",
+      techStack: [
+        "TypeScript",
+        "CSS",
+        "HTML",
+        "Javascript",
+        "React",
+      ],
+      description: ` E-Commerce-Shop mit einem modernen Ansatz zur Produktanzeige, bei dem die Produkte aus dem Bildschirm hervorstechen und interaktiv sind.`,
       logo: false,
       link: {
         label: "",
-        href: "",
+        href: "https://shopping-carti.vercel.app/",
+      },
+    },
+    {
+      title: "Wetter App",
+      techStack: [
+        "CSS",
+        "HTML",
+        "Javascript",
+      ],
+      description: ` Eine Wetter-App, welche den aktuellen Standort des Benutzers abruft und automatisch das aktuelle Wetter anzeigt, mit der Verwendung der OpenCage Data API. `,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://chingis-weather-app.vercel.app/",
+      },
+    },
+    {
+      title: "Lebenslauf/CV App",
+      techStack: [
+        "CSS",
+        "HTML",
+        "Javascript",
+        "React",
+      ],
+      description: `Eine Webanwendung, um das Eingeben von Lebensläufen ansprechender zu gestalten. Sie sehen sofort die Änderungen am Lebenslauf, während Sie sie eingeben.`,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://cv-application-navy-delta.vercel.app/",
+      },
+    },
+    {
+      title: "Etch-A-Sketch",
+      techStack: [
+        "CSS",
+        "HTML",
+        "Javascript",
+      ],
+      description: `Dem nostalgischen Kinderspielzeugleinwand nachempfunden, mit einer verstellbaren Leinwandgröße, diversen Malwerkzeugen sowie einer Speicherfunktion.`,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://github.com/codetwentyfive/Etch-A-Sketch",
       },
     },
   ],
