@@ -23,7 +23,7 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 export const RESUME_DATA = {
   name: "Chingis Zwecker E.",
   initials: "CZ",
-  location: "Karlsruhe, Deutschland, CET",
+  location: "Karlsruhe, Germany, CET",
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
   avatarUrl:
     "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1722470400&v=beta&t=cUBRWRurwicWmdylqkGO42S2fvOjTyfIzW3D9r1Z-uE",
@@ -69,112 +69,125 @@ export const RESUME_DATA = {
     "Git",
     "Github",
     "Bash",
+    "Linux",
   ],
   otherSkills: [
-    "Visuelle Präsentation und Kommunikation",
-    "Business Englisch",
+    "Visual presentation and communication",
+    "Business English",
     "MS Office",
     "Sound Design",
     "Photoshop",
     "Excel",
   ],
   languages: [
-    { language: "Deutsch", proficiency: "Muttersprache" },
-    { language: "Mongolisch", proficiency: "Muttersprache" },
-    { language: "Englisch", proficiency: "Verhandlungssicher" },
-    { language: "Französisch", proficiency: "Grundkenntnisse" },
-    { language: "Latein", proficiency: "Grundkenntnisse" },
+    { language: "German", proficiency: "Native" },
+    { language: "Mongolian", proficiency: "Native" },
+    { language: "English", proficiency: "Fluent" },
+    { language: "French", proficiency: "Basic knowledge" },
+    { language: "Latin", proficiency: "Basic knowledge" },
   ],
   education: [
     {
-      school: "The Odin Project",
-      degree: "Foundations,Full Stack Javascript",
-      start: "2022",
+      school: "The Odin Project, freeCodeCamp, MDN Web Docs",
+      degree: "Foundations, Full Stack JavaScript, Certified MongoDB Developer",
+      start: "2021",
       end: "2024",
     },
     {
-      school: "Universität von Passau",
-      degree: "Kulturwirschaftwissenschaften",
+      school: "University of Passau",
+      degree: "Cultural Economics",
       start: "2016",
       end: "2019",
     },
     {
-      school: "Ludwig Maximilian Universität, München",
-      degree: "Jura",
+      school: "Ludwig Maximilian University, Munich",
+      degree: "Law",
       start: "2013",
       end: "2016",
     },
     {
-      school: "Studienkolleg München",
-      degree: "Studienkolleg Abschlussprüfung",
+      school: "Studienkolleg Munich",
+      degree: "Studienkolleg Final Exam",
       start: "2011",
       end: "2012",
     },
   ],
   work: [
     {
-      company: "Homecare",
+      company: "Care for severely ill father",
       link: "",
-      badges: ["Organisation und Kommunikation"],
-      title: "Betreuer",
-      start: "2022",
+      badges: [""],
+      title: "Caregiver",
+      start: "2021",
       end: "now",
       description: [
-        `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens.
-  -Organisation in den Bereichen Haushaltsführung, Finanzen und Verwaltungsaufgaben.`,
+        `-Managing daily affairs and well-being of my care-dependent father.
+        -Assistance with financial and administrative tasks.
+        -Coordination of medical appointments and treatments.
+  `,
+      ],
+    },
+    {
+      company: "Career Reorientation",
+      link: "",
+      badges: [""],
+      title: "Activities:",
+      start: "2019",
+      end: "2021",
+      description: [
+        `-Learning new technologies and programming skills through online courses and self-study.
+        -Assembling PCs and delving into hardware.
+        -Further education in music production and music theory.
+        -Worked as a bartender and bouncer.
+                  `,
       ],
     },
 
     {
       company: "Apples & Berries",
       link: "",
-      badges: ["Reperatur & Verkauf"],
-      title: "Chief Operator ",
+      badges: ["Phones, Tablets, and more"],
+      title: "Repair & Sales",
       start: "2017",
       end: "2019",
-      description: `-Schulung neuer Teammitglieder.
-        -Reparatur verschiedener Geräte, einschließlich Telefone, Tablets und Laptops.
-        -Entwicklung und Umsetzung von Verkaufsstrategien.
+      description: `-Repair of various devices, including phones, tablets, and laptops.
+      -Training new team members.
+      -Development and implementation of sales strategies.
+      -Managing inventory and ordering spare parts.
     
     `,
     },
   ],
   experience: [
     {
-      company: "Driving the human",
-      link: " https://2021.rca.ac.uk/students/andra-pop-jurj/",
-      badges: ["Sound Design"],
+      company: "Driving the Human",
+      link: "https://2021.rca.ac.uk/students/andra-pop-jurj/",
+      badges: ["Sound Designer"],
       title: "Sound Designer",
       start: "2020",
       end: "2021",
 
-      description: `-Entwicklung einer einzigartigen Klangkulisse für das Projekt 'Monsters and Ghosts of the Far North'.
-        -Präsentation der Arbeiten in verschiedenen Ausstellungen landesweit.`,
+      description: `-Development of a unique soundscape for the project 'Monsters and Ghosts of the Far North'.
+        -Presentation of works in various exhibitions nationwide.`,
     },
 
     {
-      company: "Mongolische Spracholympiade",
+      company: "Mongolian Language Olympiad",
       link: "",
-      badges: ["3x Sieger,1x Zweiter"],
-      title: "Teilnehmer und Sieger",
+      badges: ["3x Winner, 1x Second Place"],
+      title: "Participant and Winner",
       start: "2010",
       end: "2013",
       description:
-        "-Dreifacher Sieger und einmal Zweiter in diversen Spracholympiaden.",
+        "-Three-time winner and once second place in various language olympiads.",
     },
   ],
 
   projects: [
     {
       title: "Yu-Gi-Oh! Card Memory",
-      techStack: [
-        "JavaScript",
-        "CSS",
-        "HTML",
-        "Python",
-        "React",
-      ],
-      description: `Ein Memory-Spiel programmiert mit ikonischen und lustigen Yu-Gi-Oh! Karten`,
+      techStack: ["JavaScript", "CSS", "HTML", "Python", "React"],
+      description: `A memory game programmed with iconic and fun Yu-Gi-Oh! cards`,
       logo: PuzzleLogo,
       link: {
         label: "",
@@ -183,14 +196,8 @@ export const RESUME_DATA = {
     },
     {
       title: "Altan Mountain",
-      techStack: [
-        "TypeScript",
-        "CSS",
-        "HTML",
-        "Javascript",
-        "React",
-      ],
-      description: ` E-Commerce-Shop mit einem modernen Ansatz zur Produktanzeige, bei dem die Produkte aus dem Bildschirm hervorstechen und interaktiv sind.`,
+      techStack: ["TypeScript", "CSS", "HTML", "JavaScript", "React"],
+      description: `An e-commerce shop with a modern approach to product display, where the products pop out of the screen and are interactive.`,
       logo: false,
       link: {
         label: "",
@@ -198,13 +205,9 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Wetter App",
-      techStack: [
-        "CSS",
-        "HTML",
-        "Javascript",
-      ],
-      description: ` Eine Wetter-App, welche den aktuellen Standort des Benutzers abruft und automatisch das aktuelle Wetter anzeigt, mit der Verwendung der OpenCage Data API. `,
+      title: "Weather App",
+      techStack: ["CSS", "HTML", "JavaScript"],
+      description: `A weather app that fetches the user's current location and automatically displays the current weather using the OpenCage Data API.`,
       logo: false,
       link: {
         label: "",
@@ -212,14 +215,9 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Lebenslauf/CV App",
-      techStack: [
-        "CSS",
-        "HTML",
-        "Javascript",
-        "React",
-      ],
-      description: `Eine Webanwendung, um das Eingeben von Lebensläufen ansprechender zu gestalten. Sie sehen sofort die Änderungen am Lebenslauf, während Sie sie eingeben.`,
+      title: "Resume/CV App",
+      techStack: ["CSS", "HTML", "JavaScript", "React"],
+      description: `A web application to make entering resumes more engaging. You see the changes to the resume instantly as you enter them.`,
       logo: false,
       link: {
         label: "",
@@ -228,12 +226,8 @@ export const RESUME_DATA = {
     },
     {
       title: "Etch-A-Sketch",
-      techStack: [
-        "CSS",
-        "HTML",
-        "Javascript",
-      ],
-      description: `Dem nostalgischen Kinderspielzeugleinwand nachempfunden, mit einer verstellbaren Leinwandgröße, diversen Malwerkzeugen sowie einer Speicherfunktion.`,
+      techStack: ["CSS", "HTML", "JavaScript"],
+      description: `Inspired by the nostalgic children's drawing toy, with adjustable canvas size, various drawing tools, and a save function.`,
       logo: false,
       link: {
         label: "",
