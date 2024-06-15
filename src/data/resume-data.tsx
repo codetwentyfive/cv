@@ -27,7 +27,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
   avatarUrl:
     "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1722470400&v=beta&t=cUBRWRurwicWmdylqkGO42S2fvOjTyfIzW3D9r1Z-uE",
-  personalWebsiteUrl: "https://chingis.dev",
+  personalWebsiteUrl: "https://www.chingis.dev",
   contact: {
     email: "chingiszwecker@gmail.com",
     tel: "+4915735203036",

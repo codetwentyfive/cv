@@ -1,239 +1,312 @@
-import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
-  PuzzleLogo,
-} from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { CommandMenu } from "@/components/command-menu";
+import { Metadata } from "next";
+import { Section } from "@/components/ui/section";
+import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { RESUME_DATA } from "@/data/resume-data";
+import { ProjectCard } from "@/components/project-card";
 
-export const RESUME_DATA = {
-  name: "Chingis Zwecker E.",
-  initials: "CZ",
-  location: "Karlsruhe, Deutschland, CET",
-  locationLink: "https://www.google.com/maps/place/Karlsruhe",
-  avatarUrl:
-    "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1722470400&v=beta&t=cUBRWRurwicWmdylqkGO42S2fvOjTyfIzW3D9r1Z-uE",
-  personalWebsiteUrl: "https://chingis.dev",
-  contact: {
-    email: "chingiszwecker@gmail.com",
-    tel: "+4915735203036",
-    social: [
-      {
-        name: "GitHub",
-        url: "https://github.com/codetwentyfive",
-        icon: GitHubIcon,
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/chingis-zwecker/",
-        icon: LinkedInIcon,
-      },
-      /*{
-        name: "X",
-        url: "https://x.com/",
-        icon: XIcon,
-      },*/
-    ],
-  },
-  skills: [
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "TypeScript",
-    "Angular",
-    "React",
-    "Node.js",
-    "MongoDB",
-    "PHP",
-    "MySQL",
-    "Express.js",
-    "three.js",
-    "NPM",
-    "Webpack",
-    "Parcel",
-    "Jest",
-    "Git",
-    "Github",
-    "Bash",
-    "Linux",
-  ],
-  otherSkills: [
-    "Visuelle Präsentation und Kommunikation",
-    "Business Englisch",
-    "MS Office",
-    "Sound Design",
-    "Photoshop",
-    "Excel",
-  ],
-  languages: [
-    { language: "Deutsch", proficiency: "Muttersprache" },
-    { language: "Mongolisch", proficiency: "Muttersprache" },
-    { language: "Englisch", proficiency: "Verhandlungssicher" },
-    { language: "Französisch", proficiency: "Grundkenntnisse" },
-    { language: "Latein", proficiency: "Grundkenntnisse" },
-  ],
-  education: [
-    {
-      school: "The Odin Project,freeCodeCamp,MDN Web Doc",
-      degree: "Foundations,Full Stack Javascript,Certified MongoDB Developer",
-      start: "2021",
-      end: "2024",
-    },
-    {
-      school: "Universität von Passau",
-      degree: "Kulturwirschaftwissenschaften",
-      start: "2016",
-      end: "2019",
-    },
-    {
-      school: "Ludwig Maximilian Universität, München",
-      degree: "Jura",
-      start: "2013",
-      end: "2016",
-    },
-    {
-      school: "Studienkolleg München",
-      degree: "Studienkolleg Abschlussprüfung",
-      start: "2011",
-      end: "2012",
-    },
-  ],
-  work: [
-    
-    {
-      company: "Pflege schwer erkrankten Vaters",
-      link: "",
-      badges: [""],
-      title: "Betreuer",
-      start: "2021",
-      end: "now",
-      description: [
-        `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens meines pflegebedürftigen Vaters.
-        -Unterstützung in Finanz- und Verwaltungsaufgaben.
-        -Koordination von Arztterminen und medizinischen Behandlungen.
-  `,
-      ],
-    },
-    {
-      company: "Berufliche Neuorientierung",
-      link: "",
-      badges: [""],
-      title: "Tätigkeiten:",
-      start: "2019",
-      end: "2021",
-      description: [
-        `-Erlernen neuer Technologien und Programmierkenntnisse durch Online-Kurse und Selbststudium.
-        -Zusammenbau von PCs und vertiefende Auseinandersetzung mit Hardware.
-        -Weiterbildung in Musikproduktion und Musiktheorie.
-        -Tätigkeiten als Barkeeper und Türsteher.
-                  `,
-      ],
-    },
+export const metadata: Metadata = {
+  title: `${RESUME_DATA.name} `,
+};
 
-    {
-      company: "Apples & Berries",
-      link: "",
-      badges: ["Handy,Tablet und co."],
-      title: "Reperatur & Verkauf",
-      start: "2017",
-      end: "2019",
-      description: `-Reparatur verschiedener Geräte, einschließlich Telefone, Tablets und Laptops.
-      -Schulung neuer Teammitglieder.
-        -Entwicklung und Umsetzung von Verkaufsstrategien.
-        -Verwaltung des Lagerbestands und Bestellung von Ersatzteilen.
-    
-    `,
-    },
-  ],
-  experience: [
-    {
-      company: "Driving the human",
-      link: " https://2021.rca.ac.uk/students/andra-pop-jurj/",
-      badges: ["Klangdesigner"],
-      title: "Sound Designer",
-      start: "2020",
-      end: "2021",
+export default function Page() {
+  return (
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+        <div className="flex items-center justify-between">
+          <div className="flex-1 space-y-1.5">
+            <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
+            <div className="flex-1 space-y-2">
+              <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
+                <a
+                  className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
+                  href={RESUME_DATA.locationLink}
+                  target="_blank"
+                >
+                  <GlobeIcon className="size-3" />
+                  {RESUME_DATA.location}
+                </a>
+              </p>
+              <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
+                Umzugsbereit: Ja
+              </p>
+              <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
+                Nationalität: mongolisch
+              </p>
+              <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
+                Aufenthaltserlaubnis:Familienaufenthaltserlaubnis(Ehe)
+              </p>
+              <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
+                Erwerbstätigkeit: Ja
+              </p>
+            </div>
 
-      description: `-Entwicklung einer einzigartigen Klangkulisse für das Projekt 'Monsters and Ghosts of the Far North'.
-        -Präsentation der Arbeiten in verschiedenen Ausstellungen landesweit.`,
-    },
 
-    {
-      company: "Mongolische Spracholympiade",
-      link: "",
-      badges: ["3x Sieger,1x Zweiter"],
-      title: "Teilnehmer und Sieger",
-      start: "2010",
-      end: "2013",
-      description:
-        "-Dreifacher Sieger und einmal Zweiter in diversen Spracholympiaden.",
-    },
-  ],
+            <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
+              <a className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline">
+                Geboren: 04.12.1995
+              </a>
+            </p>
 
-  projects: [
-    {
-      title: "Yu-Gi-Oh! Card Memory",
-      techStack: ["JavaScript", "CSS", "HTML", "Python", "React"],
-      description: `Ein Memory-Spiel programmiert mit ikonischen und lustigen Yu-Gi-Oh! Karten`,
-      logo: PuzzleLogo,
-      link: {
-        label: "",
-        href: "https://yugioh-memorygame.vercel.app/",
-      },
-    },
-    {
-      title: "Altan Mountain",
-      techStack: ["TypeScript", "CSS", "HTML", "Javascript", "React"],
-      description: ` E-Commerce-Shop mit einem modernen Ansatz zur Produktanzeige, bei dem die Produkte aus dem Bildschirm hervorstechen und interaktiv sind.`,
-      logo: false,
-      link: {
-        label: "",
-        href: "https://shopping-carti.vercel.app/",
-      },
-    },
-    {
-      title: "Wetter App",
-      techStack: ["CSS", "HTML", "Javascript"],
-      description: ` Eine Wetter-App, welche den aktuellen Standort des Benutzers abruft und automatisch das aktuelle Wetter anzeigt, mit der Verwendung der OpenCage Data API. `,
-      logo: false,
-      link: {
-        label: "",
-        href: "https://chingis-weather-app.vercel.app/",
-      },
-    },
-    {
-      title: "Lebenslauf/CV App",
-      techStack: ["CSS", "HTML", "Javascript", "React"],
-      description: `Eine Webanwendung, um das Eingeben von Lebensläufen ansprechender zu gestalten. Sie sehen sofort die Änderungen am Lebenslauf, während Sie sie eingeben.`,
-      logo: false,
-      link: {
-        label: "",
-        href: "https://cv-application-navy-delta.vercel.app/",
-      },
-    },
-    {
-      title: "Etch-A-Sketch",
-      techStack: ["CSS", "HTML", "Javascript"],
-      description: `Dem nostalgischen Kinderspielzeugleinwand nachempfunden, mit einer verstellbaren Leinwandgröße, diversen Malwerkzeugen sowie einer Speicherfunktion.`,
-      logo: false,
-      link: {
-        label: "",
-        href: "https://github.com/codetwentyfive/Etch-A-Sketch",
-      },
-    },
-  ],
-} as const;
+            <div className="flex gap-x-1  pt-1 font-mono text-sm text-muted-foreground print:hidden">
+              {RESUME_DATA.contact.email ? (
+                <Button
+                  className="size-8"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
+                  <a href={`mailto:${RESUME_DATA.contact.email}`}>
+                    <MailIcon className="size-4" />
+                  </a>
+                </Button>
+              ) : null}
+              {RESUME_DATA.contact.tel ? (
+                <Button
+                  className="size-8"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
+                  <a href={`tel:${RESUME_DATA.contact.tel}`}>
+                    <PhoneIcon className="size-4" />
+                  </a>
+                </Button>
+              ) : null}
+              {RESUME_DATA.contact.social.map((social) => (
+                <Button
+                  key={social.name}
+                  className="size-8"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
+                  <a href={social.url}>
+                    <social.icon className="size-4" />
+                  </a>
+                </Button>
+              ))}
+            </div>
+            <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
+              {RESUME_DATA.contact.email ? (
+                <a href={`mailto:${RESUME_DATA.contact.email}`}>
+                  <span className="underline">{RESUME_DATA.contact.email}</span>
+                </a>
+              ) : null}
+              {RESUME_DATA.contact.tel ? (
+                <a href={`tel:${RESUME_DATA.contact.tel}`}>
+                  <span className="underline">{RESUME_DATA.contact.tel}</span>
+                </a>
+              ) : null}
+              {RESUME_DATA.personalWebsiteUrl ? (
+                <a href={RESUME_DATA.personalWebsiteUrl}>
+                  <span className="underline">
+                    {RESUME_DATA.personalWebsiteUrl}
+                  </span>
+                </a>
+              ) : null}
+            </div>
+          </div>
+
+          <Avatar className=" pfp size-28">
+            <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
+            <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
+          </Avatar>
+        </div>
+        <Section>
+          <h2 className="text-xl font-bold">Beruflicher Werdegang:</h2>
+          {RESUME_DATA.work.map((work) => {
+            return (
+              <Card key={work.company}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                      <a
+                        className={work.link ? "hover:underline" : "hover:none"}
+                        href={work.link || "#"}
+                      >
+                        {work.company}
+                      </a>
+
+                      <span className="inline-flex gap-x-1">
+                        {work.badges.map((badge) => (
+                          <Badge
+                            variant="secondary"
+                            className="align-middle text-xs"
+                            key={badge}
+                          >
+                            {badge}
+                          </Badge>
+                        ))}
+                      </span>
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {work.start} - {work.end}
+                    </div>
+                  </div>
+
+                  <h4 className="font-mono text-sm leading-none">
+                    {work.title}
+                  </h4>
+                </CardHeader>
+                <CardContent className="mt-2 whitespace-pre-line text-xs">
+                  {work.description}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+
+        <Section className="scroll-mb-16">
+          <h2 className=" text-xl font-bold">Ausbildung:</h2>
+          {RESUME_DATA.education.map((education) => {
+            return (
+              <Card key={education.school}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="font-semibold leading-none">
+                      {education.school}
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {education.start} - {education.end}
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="mt-2">{education.degree}</CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+
+        <Section className="print-force-new-page scroll-mb-16">
+          <h2 className="text-xl font-bold">Projekte:</h2>
+          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+            {RESUME_DATA.projects.map((project) => {
+              return (
+                <ProjectCard
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  tags={project.techStack}
+                  link={"link" in project ? project.link.href : undefined}
+                />
+              );
+            })}
+          </div>
+        </Section>
+        <Section>
+          <h2 className="text-xl font-bold">Erfahrungen:</h2>
+          {RESUME_DATA.experience.map((experience) => {
+            return (
+              <Card key={experience.company}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                      <a
+                        className={
+                          experience.link ? "hover:underline" : "hover:none"
+                        }
+                        href={experience.link || "#"}
+                      >
+                        {experience.company}
+                      </a>
+
+                      <span className="inline-flex gap-x-1">
+                        {experience.badges.map((badge) => (
+                          <Badge
+                            variant="secondary"
+                            className="align-middle text-xs"
+                            key={badge}
+                          >
+                            {badge}
+                          </Badge>
+                        ))}
+                      </span>
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {experience.start} - {experience.end}
+                    </div>
+                  </div>
+
+                  <h4 className="font-mono text-sm leading-none">
+                    {experience.title}
+                  </h4>
+                </CardHeader>
+                <CardContent className="mt-2 whitespace-pre-line text-xs">
+                  {experience.description}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+        <Section className=" ">
+          <h2 className="text-xl font-bold">Programmier Kenntnisse:</h2>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.skills.map((skill) => {
+              return <Badge key={skill}>{skill}</Badge>;
+            })}
+          </div>
+        </Section>
+
+        <div className="grid grid-flow-col">
+          <Section>
+            <div>
+              <h2 className="py-2 text-xl font-bold">
+                Kenntnisse und Fähigkeiten:
+              </h2>
+              <div className="flex  flex-col flex-wrap gap-1">
+                {RESUME_DATA.otherSkills.map((otherSkill) => {
+                  return (
+                    <p className="font-semibold" key={otherSkill}>
+                      - {otherSkill}
+                    </p>
+                  );
+                })}
+              </div>
+            </div>
+          </Section>
+
+          <Section>
+            <div>
+              <h2 className="py-2 text-xl font-bold">Sprachen:</h2>
+              <div className="flex  flex-col  gap-1">
+                {RESUME_DATA.languages.map((languages) => {
+                  return (
+                    <div key={languages.language} className="flex gap-2 ">
+                      <p className="font-semibold">- {languages.language} : </p>
+
+                      <Badge
+                        variant="secondary"
+                        className="align-middle text-xs"
+                        key={languages.proficiency}
+                      >
+                        {languages.proficiency}
+                      </Badge>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </Section>
+        </div>
+      </section>
+
+      <CommandMenu
+        links={[
+          {
+            url: RESUME_DATA.personalWebsiteUrl,
+            title: "Personal Website",
+          },
+          ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
+            url: socialMediaLink.url,
+            title: socialMediaLink.name,
+          })),
+        ]}
+      />
+    </main>
+  );
+}

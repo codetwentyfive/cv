@@ -27,7 +27,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
   avatarUrl:
     "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1722470400&v=beta&t=cUBRWRurwicWmdylqkGO42S2fvOjTyfIzW3D9r1Z-uE",
-  personalWebsiteUrl: "https://chingis.dev",
+  personalWebsiteUrl: "https://www.chingis.dev",
   contact: {
     email: "chingiszwecker@gmail.com",
     tel: "+4915735203036",
@@ -95,13 +95,13 @@ export const RESUME_DATA = {
     },
     {
       school: "University of Passau",
-      degree: "Cultural Economics",
+      degree: "Cultural Economics(Bachelor) - unfinished",
       start: "2016",
       end: "2019",
     },
     {
       school: "Ludwig Maximilian University, Munich",
-      degree: "Law",
+      degree: "Law(Bachelor) - unfinsihed",
       start: "2013",
       end: "2016",
     },
@@ -121,9 +121,8 @@ export const RESUME_DATA = {
       start: "2021",
       end: "now",
       description: [
-        `-Managing daily affairs and well-being of my care-dependent father.
-        -Assistance with financial and administrative tasks.
-        -Coordination of medical appointments and treatments.
+        `-Managing daily affairs and well-being of my care-dependent father
+        -Assistance with financial and administrative tasks
   `,
       ],
     },
@@ -135,10 +134,10 @@ export const RESUME_DATA = {
       start: "2019",
       end: "2021",
       description: [
-        `-Learning new technologies and programming skills through online courses and self-study.
-        -Assembling PCs and delving into hardware.
-        -Further education in music production and music theory.
-        -Worked as a bartender and bouncer.
+        `-Learned new technologies and programming skills through online courses and self-study
+        -AssembledPCs and delving into hardware
+        -Further education in music production and music theory
+        -Worked as a bartender and bouncer
                   `,
       ],
     },
@@ -147,13 +146,12 @@ export const RESUME_DATA = {
       company: "Apples & Berries",
       link: "",
       badges: ["Phones, Tablets, and more"],
-      title: "Repair & Sales",
+      title: "Technician & Salesman",
       start: "2017",
       end: "2019",
-      description: `-Repair of various devices, including phones, tablets, and laptops.
-      -Training new team members.
-      -Development and implementation of sales strategies.
-      -Managing inventory and ordering spare parts.
+      description: `-Repair of various devices, including phones, tablets, and laptops
+      -Training new team members
+      -Managing inventory and ordering spare parts
     
     `,
     },
@@ -167,8 +165,8 @@ export const RESUME_DATA = {
       start: "2020",
       end: "2021",
 
-      description: `-Development of a unique soundscape for the project 'Monsters and Ghosts of the Far North'.
-        -Presentation of works in various exhibitions nationwide.`,
+      description: `-Development of a unique soundscape for the project 'Monsters and Ghosts of the Far North'
+        -Presentation of works in various exhibitions nationwide`,
     },
 
     {
@@ -179,7 +177,7 @@ export const RESUME_DATA = {
       start: "2010",
       end: "2013",
       description:
-        "-Three-time winner and once second place in various language olympiads.",
+        "-Three-time winner and once second place in various language olympiads",
     },
   ],
 
@@ -187,7 +185,7 @@ export const RESUME_DATA = {
     {
       title: "Yu-Gi-Oh! Card Memory",
       techStack: ["JavaScript", "CSS", "HTML", "Python", "React"],
-      description: `A memory game programmed with iconic and fun Yu-Gi-Oh! cards`,
+      description: `A memory game programmed with iconic and funny Yu-Gi-Oh! cards`,
       logo: PuzzleLogo,
       link: {
         label: "",
@@ -197,7 +195,7 @@ export const RESUME_DATA = {
     {
       title: "Altan Mountain",
       techStack: ["TypeScript", "CSS", "HTML", "JavaScript", "React"],
-      description: `An e-commerce shop with a modern approach to product display, where the products pop out of the screen and are interactive.`,
+      description: `An e-commerce shop with a modern approach to product display, where the products pop out of the screen and are interactive via mouse hover.`,
       logo: false,
       link: {
         label: "",
@@ -227,11 +225,11 @@ export const RESUME_DATA = {
     {
       title: "Etch-A-Sketch",
       techStack: ["CSS", "HTML", "JavaScript"],
-      description: `Inspired by the nostalgic children's drawing toy, with adjustable canvas size, various drawing tools, and a save function.`,
+      description: `Inspired by the nostalgic children's drawing toy, with an adjustable canvas size, various drawing tools, and a save function to share the artwork.`,
       logo: false,
       link: {
         label: "",
-        href: "https://github.com/codetwentyfive/Etch-A-Sketch",
+        href: "https://codetwentyfive.github.io/Etch-A-Sketch/",
       },
     },
   ],
