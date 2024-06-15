@@ -1,21 +1,44 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
-import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 
-export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} `,
+const loadResumeData = (language) => {
+  return language === "en"
+    ? import("@/data/resume-data-en")
+    : import("@/data/resume-data");
 };
 
 export default function Page() {
+  const [language, setLanguage] = useState("de");
+  const [RESUME_DATA, setResumeData] = useState(null);
+
+  useEffect(() => {
+    loadResumeData(language).then((data) => setResumeData(data.RESUME_DATA));
+  }, [language]);
+
+  const toggleLanguage = () => {
+    const newLanguage = language === "de" ? "en" : "de";
+    setLanguage(newLanguage);
+    loadResumeData(newLanguage).then((data) => setResumeData(data.RESUME_DATA));
+  };
+
+  if (!RESUME_DATA) return <div>Loading...</div>;
+
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
+      <div className="absolute right-4 top-4 print:hidden">
+        <Button onClick={toggleLanguage}>
+          Switch to {language === "de" ? "English" : "German"}
+        </Button>
+      </div>
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
@@ -32,26 +55,23 @@ export default function Page() {
                 </a>
               </p>
               <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
-                Umzugsbereit: Ja
+                Open to relocation: Yes
               </p>
               <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
-                Nationalität: mongolisch
+                Nationality: Mongolian
               </p>
               <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
-                Aufenthaltserlaubnis:Familienaufenthaltserlaubnis(Ehe)
+                Residence permit: Family residence permit (Marriage)
               </p>
               <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
-                Erwerbstätigkeit: Ja
+                Work authorization: Yes
               </p>
             </div>
-
-
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
               <a className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline">
-                Geboren: 04.12.1995
+              Date of birth: 04.12.1995
               </a>
             </p>
-
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
               {RESUME_DATA.contact.email ? (
                 <Button
@@ -111,14 +131,13 @@ export default function Page() {
               ) : null}
             </div>
           </div>
-
-          <Avatar className=" pfp size-28">
+          <Avatar className="pfp size-28">
             <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">Beruflicher Werdegang:</h2>
+          <h2 className="text-xl font-bold">Work Experience:</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
@@ -131,7 +150,6 @@ export default function Page() {
                       >
                         {work.company}
                       </a>
-
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
                           <Badge
@@ -148,7 +166,6 @@ export default function Page() {
                       {work.start} - {work.end}
                     </div>
                   </div>
-
                   <h4 className="font-mono text-sm leading-none">
                     {work.title}
                   </h4>
@@ -160,9 +177,8 @@ export default function Page() {
             );
           })}
         </Section>
-
         <Section className="scroll-mb-16">
-          <h2 className=" text-xl font-bold">Ausbildung:</h2>
+          <h2 className="text-xl font-bold">Education:</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
@@ -181,9 +197,8 @@ export default function Page() {
             );
           })}
         </Section>
-
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Projekte:</h2>
+          <h2 className="text-xl font-bold">Projects:</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
@@ -199,7 +214,7 @@ export default function Page() {
           </div>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Erfahrungen:</h2>
+          <h2 className="text-xl font-bold">Experiences:</h2>
           {RESUME_DATA.experience.map((experience) => {
             return (
               <Card key={experience.company}>
@@ -214,7 +229,6 @@ export default function Page() {
                       >
                         {experience.company}
                       </a>
-
                       <span className="inline-flex gap-x-1">
                         {experience.badges.map((badge) => (
                           <Badge
@@ -231,7 +245,6 @@ export default function Page() {
                       {experience.start} - {experience.end}
                     </div>
                   </div>
-
                   <h4 className="font-mono text-sm leading-none">
                     {experience.title}
                   </h4>
@@ -243,22 +256,19 @@ export default function Page() {
             );
           })}
         </Section>
-        <Section className=" ">
-          <h2 className="text-xl font-bold">Programmier Kenntnisse:</h2>
+        <Section className="">
+          <h2 className="text-xl font-bold">Programming Skills:</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
         </Section>
-
         <div className="grid grid-flow-col">
           <Section>
             <div>
-              <h2 className="py-2 text-xl font-bold">
-                Kenntnisse und Fähigkeiten:
-              </h2>
-              <div className="flex  flex-col flex-wrap gap-1">
+              <h2 className="py-2 text-xl font-bold">Other Skills:</h2>
+              <div className="flex flex-col flex-wrap gap-1">
                 {RESUME_DATA.otherSkills.map((otherSkill) => {
                   return (
                     <p className="font-semibold" key={otherSkill}>
@@ -269,16 +279,14 @@ export default function Page() {
               </div>
             </div>
           </Section>
-
           <Section>
             <div>
-              <h2 className="py-2 text-xl font-bold">Sprachen:</h2>
-              <div className="flex  flex-col  gap-1">
+              <h2 className="py-2 text-xl font-bold">Languages:</h2>
+              <div className="flex flex-col gap-1">
                 {RESUME_DATA.languages.map((languages) => {
                   return (
                     <div key={languages.language} className="flex gap-2 ">
-                      <p className="font-semibold">- {languages.language} : </p>
-
+                      <p className="font-semibold">- {languages.language} :</p>
                       <Badge
                         variant="secondary"
                         className="align-middle text-xs"
@@ -294,7 +302,6 @@ export default function Page() {
           </Section>
         </div>
       </section>
-
       <CommandMenu
         links={[
           {
