@@ -20,36 +20,36 @@ export default function Page() {
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
-
-            <p className="flex space-x-2 max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
-              <a
-                className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
-                href={RESUME_DATA.locationLink}
-                target="_blank"
-              >
-                <GlobeIcon className="size-3" />
-                {RESUME_DATA.location}
-              </a>
-              <p>(umzugsbereit)</p>
+            <div className="flex-1 space-y-2">
+              <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
+                <a
+                  className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
+                  href={RESUME_DATA.locationLink}
+                  target="_blank"
+                >
+                  <GlobeIcon className="size-3" />
+                  {RESUME_DATA.location}
+                </a>
               </p>
-            
-
-            <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
-              <a
-                className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
-              
-              >
+              <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
+                Umzugsbereit: Ja
+              </p>
+              <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
                 Nationalität: mongolisch
-              </a> 
-            </p>
+              </p>
+              <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
+                Aufenthaltserlaubnis:Familienaufenthaltserlaubnis(Ehe)
+              </p>
+              <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
+                Erwerbstätigkeit: Ja
+              </p>
+            </div>
+
 
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
-              <a
-                className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
-              
-              >
-                Geboren: 04.12.1995 
-              </a> 
+              <a className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline">
+                Geboren: 04.12.1995
+              </a>
             </p>
 
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
