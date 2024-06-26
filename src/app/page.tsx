@@ -55,21 +55,25 @@ export default function Page() {
                 </a>
               </p>
               <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
-                Open to relocation: Yes
+                {RESUME_DATA.relocation}
               </p>
               <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
-                Nationality: Mongolian
+                {RESUME_DATA.nationality}
+
               </p>
               <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
-                Residence permit: Family residence permit (Marriage)
+              {RESUME_DATA.permit}
+                
               </p>
               <p className="flex max-w-md items-center space-x-2 text-pretty font-mono text-xs text-muted-foreground">
-                Work authorization: Yes
+              {RESUME_DATA.workpermit}
+
               </p>
             </div>
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
               <a className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline">
-              Date of birth: 04.12.1995
+              {RESUME_DATA.birthday}
+
               </a>
             </p>
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
@@ -137,7 +141,7 @@ export default function Page() {
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience:</h2>
+          <h2 className="text-xl font-bold">{RESUME_DATA.workheader}</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
@@ -178,7 +182,7 @@ export default function Page() {
           })}
         </Section>
         <Section className="scroll-mb-16">
-          <h2 className="text-xl font-bold">Education:</h2>
+          <h2 className="text-xl font-bold">{RESUME_DATA.educationheader}</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
@@ -198,7 +202,7 @@ export default function Page() {
           })}
         </Section>
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Projects:</h2>
+          <h2 className="text-xl font-bold">{RESUME_DATA.projectsheader}</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
@@ -214,7 +218,7 @@ export default function Page() {
           </div>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Experiences:</h2>
+          <h2 className="text-xl font-bold">{RESUME_DATA.experiencesheader}</h2>
           {RESUME_DATA.experience.map((experience) => {
             return (
               <Card key={experience.company}>
@@ -257,7 +261,7 @@ export default function Page() {
           })}
         </Section>
         <Section className="">
-          <h2 className="text-xl font-bold">Programming Skills:</h2>
+          <h2 className="text-xl font-bold">{RESUME_DATA.programmingskillsheader}</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
@@ -267,7 +271,7 @@ export default function Page() {
         <div className="grid grid-flow-col">
           <Section>
             <div>
-              <h2 className="py-2 text-xl font-bold">Other Skills:</h2>
+              <h2 className="py-2 text-xl font-bold">{RESUME_DATA.otherskillsheader}</h2>
               <div className="flex flex-col flex-wrap gap-1">
                 {RESUME_DATA.otherSkills.map((otherSkill) => {
                   return (
@@ -281,7 +285,7 @@ export default function Page() {
           </Section>
           <Section>
             <div>
-              <h2 className="py-2 text-xl font-bold">Languages:</h2>
+              <h2 className="py-2 text-xl font-bold">{RESUME_DATA.languagesheader}</h2>
               <div className="flex flex-col gap-1">
                 {RESUME_DATA.languages.map((languages) => {
                   return (
