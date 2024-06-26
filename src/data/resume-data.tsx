@@ -27,7 +27,20 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
   avatarUrl:
     "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1722470400&v=beta&t=cUBRWRurwicWmdylqkGO42S2fvOjTyfIzW3D9r1Z-uE",
-  personalWebsiteUrl: "https://www.chingis.dev",
+  relocation:"Umzugsbereit: Ja",
+  nationality:"Nationalität: Mongolisch",
+  permit:"Aufenthaltserlaubnis: Dauerhafter Aufenthalt",
+  workpermit:"Erwerbstätigkeit: Erlaubt",
+  birthday:" Geburtsdatum: 4 Dezember 1995",
+  workheader:"Beruflicher Werdegang:",
+  educationheader:"Ausbildung:",
+  projectsheader:"Projekte:",
+  experiencesheader:"Erfahrungen:",
+  programmingskillsheader:"Programmier Kenntnisse:",
+  otherskillsheader:"Kentnisse und Fähigkeiten:",
+  languagesheader:"Sprachen:",
+
+    personalWebsiteUrl: "https://www.chingis.dev",
   contact: {
     email: "chingiszwecker@gmail.com",
     tel: "+4915735203036",
@@ -90,26 +103,26 @@ export const RESUME_DATA = {
     {
       school: "The Odin Project,freeCodeCamp,MDN Web Doc",
       degree: "Foundations,Full Stack Javascript,Certified MongoDB Developer",
-      start: "2021",
-      end: "2024",
+      start: "Dezember 2021",
+      end: "jetzt",
     },
     {
       school: "Universität von Passau",
-      degree: "Kulturwirschaftwissenschaften - Bachelor",
-      start: "2016",
-      end: "2019",
+      degree: "Kulturwirschaftwissenschaften (Bachelor) - nicht abgeschlossen",
+      start: "Oktober 2016",
+      end: "Juli 2019",
     },
     {
       school: "Ludwig Maximilian Universität, München",
-      degree: "Rechtswissenschaften - Bachelor",
-      start: "2013",
-      end: "2016",
+      degree: "Rechtswissenschaften (Bachelor) - nicht abgeschlossen",
+      start: "Oktober 2014",
+      end: "Februar 2016",
     },
     {
       school: "Studienkolleg München",
-      degree: "Studienkolleg Abschlussprüfung",
-      start: "2011",
-      end: "2012",
+      degree: "Fachabitur",
+      start: "Oktober 2013",
+      end: "Juli 2014",
     },
   ],
   work: [
@@ -117,10 +130,10 @@ export const RESUME_DATA = {
     {
       company: "Pflege schwer erkrankten Vaters",
       link: "",
-      badges: [""],
+      badges: ["Karlsruhe"],
       title: "Betreuer",
-      start: "2021",
-      end: "now",
+      start: "April 2021",
+      end: "jetzt",
       description: [
         `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens meines pflegebedürftigen Vaters
         -Unterstützung in administrativen Aufgaben
@@ -130,10 +143,10 @@ export const RESUME_DATA = {
     {
       company: "Berufliche Neuorientierung",
       link: "",
-      badges: [""],
+      badges: ["Karlsruhe,Passau"],
       title: "Tätigkeiten:",
-      start: "2019",
-      end: "2021",
+      start: "Mai 2019",
+      end: "April 2021",
       description: [
         `-Erlernen neuer Technologien und Programmierkenntnisse durch Online-Kurse und Selbststudium
         -Zusammenbau von PCs und vertiefende Auseinandersetzung mit Hardware
@@ -146,10 +159,10 @@ export const RESUME_DATA = {
     {
       company: "Apples & Berries",
       link: "",
-      badges: ["Handy,Tablet und co."],
+      badges: ["Passau"],
       title: "Reperatur & Verkauf",
-      start: "2017",
-      end: "2019",
+      start: "September 2017",
+      end: "April 2019",
       description: `-Reperatur verschiedener Geräte, einschließlich Telefone, Tablets und Laptops
       -Schulung neuer Teammitglieder
         -Verwaltung des Lagerbestands und Bestellung von Ersatzteilen
@@ -163,8 +176,8 @@ export const RESUME_DATA = {
       link: " https://2021.rca.ac.uk/students/andra-pop-jurj/",
       badges: ["Klangdesigner"],
       title: "Sound Designer",
-      start: "2020",
-      end: "2021",
+      start: "January 2021",
+      end: "Mai 2021",
 
       description: `-Entwicklung einer einzigartigen Klangkulisse für das Projekt 'Monsters and Ghosts of the Far North'
         -Präsentation der Arbeiten in verschiedenen Ausstellungen landesweit`,
@@ -216,7 +229,7 @@ export const RESUME_DATA = {
     {
       title: "Lebenslauf/CV App",
       techStack: ["CSS", "HTML", "Javascript", "React"],
-      description: `Eine Webanwendung, um das Eingeben von Lebensläufen ansprechender zu gestalten. Sie sehen sofort die Änderungen am Lebenslauf, während Sie sie eingeben`,
+      description: `Eine Webanwendung, für ein einfaches erstellen von Lebensläufen`,
       logo: false,
       link: {
         label: "",
@@ -226,7 +239,7 @@ export const RESUME_DATA = {
     {
       title: "Etch-A-Sketch",
       techStack: ["CSS", "HTML", "Javascript"],
-      description: `Dem nostalgischen Kinderspielzeugleinwand nachempfunden, mit einer verstellbaren Leinwandgröße, diversen Malwerkzeugen sowie einer Speicherfunktion`,
+      description: `Der nostalgischen Kinderspielzeugleinwand nachempfunden, mit einer verstellbaren Leinwandgröße, diversen Malwerkzeugen sowie einer Speicherfunktion`,
       logo: false,
       link: {
         label: "",

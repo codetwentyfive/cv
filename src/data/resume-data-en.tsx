@@ -27,7 +27,19 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
   avatarUrl:
     "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1722470400&v=beta&t=cUBRWRurwicWmdylqkGO42S2fvOjTyfIzW3D9r1Z-uE",
-  personalWebsiteUrl: "https://www.chingis.dev",
+    relocation:"Open to relocation: Yes",
+  nationality:"Nationality: Mongolian",
+  workpermit:"Work authorization: Yes",
+  birthday:"Birthdate: 4 December 1995",
+  permit:"Residence permit: Family residence permit (Marriage)",
+  workheader:"Work Experience:",
+  educationheader:"Education:",
+  projectsheader:"Projects:",
+  experiencesheader:"Experiences:",
+  programmingskillsheader:"Programming Skills:",
+  otherskillsheader:"Other Skills:",
+  languagesheader:"Languages:",
+    personalWebsiteUrl: "https://www.chingis.dev",
   contact: {
     email: "chingiszwecker@gmail.com",
     tel: "+4915735203036",
@@ -135,7 +147,7 @@ export const RESUME_DATA = {
       end: "2021",
       description: [
         `-Learned new technologies and programming skills through online courses and self-study
-        -AssembledPCs and delving into hardware
+        -Assembled PCs and learned more about hardware
         -Further education in music production and music theory
         -Worked as a bartender and bouncer
                   `,
