@@ -16,18 +16,32 @@ import {
   ParabolLogo,
   TastyCloudLogo,
   YearProgressLogo,
+  PuzzleLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Chingis Enkhbaatar",
-  initials: "CE",
-  location: "Karlsruhe, Deutschland, CET",
+  name: "Chingis Zwecker E.",
+  initials: "CZ",
+  location: "Karlsruhe, Germany, CET",
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
+    relocation:"Open to relocation: Yes",
+  nationality:"Nationality: Mongolian",
+  workpermit:"Work authorization: Yes",
+  birthday:"Birthdate: 4 December 1995",
+  permit:"Residence permit: Family residence permit (Marriage)",
+  workheader:"Work Experience:",
+  educationheader:"Education:",
+  projectsheader:"Projects:",
+  experiencesheader:"Experiences:",
+  programmingskillsheader:"Programming Skills:",
+  otherskillsheader:"Other Skills:",
+  languagesheader:"Languages:",
+    personalWebsiteUrl: "https://www.chingis.dev",
   avatarUrl: "./images/pfp.jpeg",
   personalWebsiteUrl: "https://chingis-portfolio-3d.vercel.app/",
   contact: {
-    email: "chingisenkhbaatar@gmail.com",
+    email: "chingiszwecker@gmail.com",
     tel: "+4915735203036",
     social: [
       {
@@ -37,7 +51,7 @@ export const RESUME_DATA = {
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/chingis-enkhbaatar/",
+        url: "https://www.linkedin.com/in/chingis-zwecker/",
         icon: LinkedInIcon,
       },
       /*{
@@ -52,9 +66,13 @@ export const RESUME_DATA = {
     "HTML",
     "CSS",
     "TypeScript",
+    "Angular",
     "React",
     "Node.js",
     "MongoDB",
+    "PHP",
+    "MySQL",
+    "Express.js",
     "three.js",
     "NPM",
     "Webpack",
@@ -63,21 +81,28 @@ export const RESUME_DATA = {
     "Git",
     "Github",
     "Bash",
+    "Linux",
 
 
   ],
   otherSkills: [
-    "Presentation and Visualization",
+    "Visual presentation and communication",
     "Business English",
     "MS Office",
     "Sound Design",
     "Photoshop",
+    "Excel",
     "SEO",
     "Performance Optimization",
     "User Experience",
     
   ],
   languages: [
+    { language: "German", proficiency: "Native" },
+    { language: "Mongolian", proficiency: "Native" },
+    { language: "English", proficiency: "Fluent" },
+    { language: "French", proficiency: "Basic knowledge" },
+    { language: "Latin", proficiency: "Basic knowledge" },
 
     { language: "German", proficiency: "native" },
     { language: "Mongolian", proficiency: "native" },
@@ -89,93 +114,148 @@ export const RESUME_DATA = {
   ],
   education: [
     {
-      school: "The Odin Project",
-      degree: "Foundations,Full Stack Javascript",
-      start: "2022",
+      school: "The Odin Project, freeCodeCamp, MDN Web Docs",
+      degree: "Foundations, Full Stack JavaScript, Certified MongoDB Developer",
+      start: "2021",
       end: "2024",
     },
     {
       school: "University of Passau",
-      degree: "Completed coursework in various cultural economics subjects",
+      degree: "Cultural Economics(Bachelor) - unfinished",
       start: "2016",
       end: "2019",
     },
     {
-      school: "Ludwig Maximilian University of Munich",
-      degree: "Completed coursework in various legal subjects",
+      school: "Ludwig Maximilian University, Munich",
+      degree: "Law(Bachelor) - unfinsihed",
       start: "2013",
       end: "2016",
     },
     {
       school: "Studienkolleg Munich",
-      degree: "Studienkolleg Abschlussprüfung",
+      degree: "Studienkolleg Final Exam",
       start: "2011",
       end: "2012",
     },
   ],
   work: [
     {
-      company: "Homecare",
+      company: "Care for severely ill father",
       link: "",
-      badges: ["Caretaker"],
-      title: "Guardian",
-      start: "2022",
+      badges: [""],
+      title: "Caregiver",
+      start: "2021",
       end: "now",
-      description:
-        "Managing the daily affairs,well-being and taking on responsibilities in household management, financial oversight, and administrative tasks.",
+      description: [
+        `-Managing daily affairs and well-being of my care-dependent father
+        -Assistance with financial and administrative tasks
+  `,
+      ],
+    },
+    {
+      company: "Career Reorientation",
+      link: "",
+      badges: [""],
+      title: "Activities:",
+      start: "2019",
+      end: "2021",
+      description: [
+        `-Learned new technologies and programming skills through online courses and self-study
+        -Assembled PCs and learned more about hardware
+        -Further education in music production and music theory
+        -Worked as a bartender and bouncer
+                  `,
+      ],
     },
 
     {
       company: "Apples & Berries",
       link: "",
-      badges: ["Repair & Sales"],
-      title: "Chief Operator ",
-      start: "2018",
+      badges: ["Phones, Tablets, and more"],
+      title: "Technician & Salesman",
+      start: "2017",
       end: "2019",
-      description:
-        "In charge of the store,training new staff and repair of various devices ranging from phones to tablets & laptops",
+      description: `-Repair of various devices, including phones, tablets, and laptops
+      -Training new team members
+      -Managing inventory and ordering spare parts
+    
+    `,
     },
   ],
   experience: [
     {
-      company: "Driving the human",
-      link: " https://2021.rca.ac.uk/students/andra-pop-jurj/",
-      badges: ["Sound Design"],
-      title: "Sound designer",
-      start: "2020",  end: "2021",
-      
-      description:
-        "Crafted a unique sound stage for the early stages of the project Monsters and Ghosts of the Far North, which later went on to be featured in various exhibitions across the country  ",
+      company: "Driving the Human",
+      link: "https://2021.rca.ac.uk/students/andra-pop-jurj/",
+      badges: ["Sound Designer"],
+      title: "Sound Designer",
+      start: "2020",
+      end: "2021",
+
+      description: `-Development of a unique soundscape for the project 'Monsters and Ghosts of the Far North'
+        -Presentation of works in various exhibitions nationwide`,
     },
 
     {
-      company: "Mongolian National Linguistic Olympiad",
+      company: "Mongolian Language Olympiad",
       link: "",
-      badges: ["3x Winner,1x Second"],
-      title: "Lingust",
+      badges: ["3x Winner, 1x Second Place"],
+      title: "Participant and Winner",
       start: "2010",
       end: "2013",
       description:
-        "Competed and won various german and english language olympiads during my school days",
+        "-Three-time winner and once second place in various language olympiads",
     },
   ],
 
   projects: [
     {
-      title: "",
-      techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-      ],
-      description: "",
+      title: "Yu-Gi-Oh! Card Memory",
+      techStack: ["JavaScript", "CSS", "HTML", "Python", "React"],
+      description: `A memory game programmed with iconic and funny Yu-Gi-Oh! cards`,
+      logo: PuzzleLogo,
+      link: {
+        label: "",
+        href: "https://yugioh-memorygame.vercel.app/",
+      },
+    },
+    {
+      title: "Altan Mountain",
+      techStack: ["TypeScript", "CSS", "HTML", "JavaScript", "React"],
+      description: `An e-commerce shop with a modern approach to product display, where the products pop out of the screen and are interactive via mouse hover.`,
       logo: false,
       link: {
         label: "",
-        href: "",
+        href: "https://shopping-carti.vercel.app/",
+      },
+    },
+    {
+      title: "Weather App",
+      techStack: ["CSS", "HTML", "JavaScript"],
+      description: `A weather app that fetches the user's current location and automatically displays the current weather using the OpenCage Data API.`,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://chingis-weather-app.vercel.app/",
+      },
+    },
+    {
+      title: "Resume/CV App",
+      techStack: ["CSS", "HTML", "JavaScript", "React"],
+      description: `A web application to make entering resumes more engaging. You see the changes to the resume instantly as you enter them.`,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://cv-application-navy-delta.vercel.app/",
+      },
+    },
+    {
+      title: "Etch-A-Sketch",
+      techStack: ["CSS", "HTML", "JavaScript"],
+      description: `Inspired by the nostalgic children's drawing toy, with an adjustable canvas size, various drawing tools, and a save function to share the artwork.`,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://codetwentyfive.github.io/Etch-A-Sketch/",
       },
     },
     {

@@ -27,6 +27,20 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
   avatarUrl: "/images/pfp.jpeg",
   personalWebsiteUrl: "https://chingis.dev",
+  relocation:"Umzugsbereit: Ja",
+  nationality:"Nationalität: Mongolisch",
+  permit:"Aufenthaltserlaubnis: Dauerhafter Aufenthalt",
+  workpermit:"Erwerbstätigkeit: Erlaubt",
+  birthday:" Geburtsdatum: 4 Dezember 1995",
+  workheader:"Beruflicher Werdegang:",
+  educationheader:"Ausbildung:",
+  projectsheader:"Projekte:",
+  experiencesheader:"Erfahrungen:",
+  programmingskillsheader:"Programmier Kenntnisse:",
+  otherskillsheader:"Kentnisse und Fähigkeiten:",
+  languagesheader:"Sprachen:",
+
+    personalWebsiteUrl: "https://www.chingis.dev",
   contact: {
     email: "chingiszwecker@gmail.com",
     tel: "+4915735203036",
@@ -73,6 +87,7 @@ export const RESUME_DATA = {
     "Nodemailer",
     "Framer Motion",
     
+    "Linux",
   ],
   otherSkills: [
     "Visuelle Präsentation und Kommunikation",
@@ -96,24 +111,31 @@ export const RESUME_DATA = {
       degree: "Selbststudium in Foundations und Full Stack JavaScript Entwicklung.",
       start: "2022",
       end: "2024",
+      school: "The Odin Project,freeCodeCamp,MDN Web Doc",
+      degree: "Foundations,Full Stack Javascript,Certified MongoDB Developer",
+      start: "Dezember 2021",
+      end: "jetzt",
     },
     {
       school: "Universität von Passau",
-      degree: "Kulturwirschaftwissenschaften",
-      start: "2016",
-      end: "2019",
+      degree: "Kulturwirschaftwissenschaften (Bachelor) - nicht abgeschlossen",
+      start: "Oktober 2016",
+      end: "Juli 2019",
     },
     {
       school: "Ludwig Maximilian Universität, München",
       degree: "Rechtswissenschaften",
       start: "2013",
       end: "2016",
+      degree: "Rechtswissenschaften (Bachelor) - nicht abgeschlossen",
+      start: "Oktober 2014",
+      end: "Februar 2016",
     },
     {
       school: "Studienkolleg München",
-      degree: "Studienkolleg Abschlussprüfung",
-      start: "2011",
-      end: "2012",
+      degree: "Fachabitur",
+      start: "Oktober 2013",
+      end: "Juli 2014",
     },
   ],
   work: [
@@ -131,16 +153,33 @@ export const RESUME_DATA = {
 -Optimierung der Website-Performance durch effiziente Code-Struktur und Ressourcennutzung.
 `,
     },
+    
     {
-      company: "Homecare",
+      company: "Pflege schwer erkrankten Vaters",
       link: "",
-      badges: ["Organisation und Kommunikation"],
+      badges: ["Karlsruhe"],
       title: "Betreuer",
-      start: "2022",
-      end: "now",
+      start: "April 2021",
+      end: "jetzt",
       description: [
-        `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens.
-  -Organisation in den Bereichen Haushaltsführung, Finanzen und Verwaltungsaufgaben.`,
+        `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens meines pflegebedürftigen Vaters
+        -Unterstützung in administrativen Aufgaben
+  `,
+      ],
+    },
+    {
+      company: "Berufliche Neuorientierung",
+      link: "",
+      badges: ["Karlsruhe,Passau"],
+      title: "Tätigkeiten:",
+      start: "Mai 2019",
+      end: "April 2021",
+      description: [
+        `-Erlernen neuer Technologien und Programmierkenntnisse durch Online-Kurse und Selbststudium
+        -Zusammenbau von PCs und vertiefende Auseinandersetzung mit Hardware
+        -Weiterbildung in Musikproduktion und Musiktheorie
+        -Tätigkeiten als Barkeeper und Türsteher
+                  `,
       ],
     },
 
@@ -162,13 +201,13 @@ export const RESUME_DATA = {
     {
       company: "Driving the human",
       link: " https://2021.rca.ac.uk/students/andra-pop-jurj/",
-      badges: ["Sound Design"],
+      badges: ["Klangdesigner"],
       title: "Sound Designer",
-      start: "2020",
-      end: "2021",
+      start: "January 2021",
+      end: "Mai 2021",
 
-      description: `-Entwicklung einer einzigartigen Klangkulisse für das Projekt 'Monsters and Ghosts of the Far North'.
-        -Präsentation der Arbeiten in verschiedenen Ausstellungen landesweit.`,
+      description: `-Entwicklung einer einzigartigen Klangkulisse für das Projekt 'Monsters and Ghosts of the Far North'
+        -Präsentation der Arbeiten in verschiedenen Ausstellungen landesweit`,
     },
 
     {
@@ -179,7 +218,7 @@ export const RESUME_DATA = {
       start: "2010",
       end: "2013",
       description:
-        "-Dreifacher Sieger und einmal Zweiter in diversen Spracholympiaden.",
+        "-Dreifacher Sieger und einmal Zweiter in diversen Spracholympiaden",
     },
     
   ],
@@ -187,13 +226,7 @@ export const RESUME_DATA = {
   projects: [
     {
       title: "Yu-Gi-Oh! Card Memory",
-      techStack: [
-        "JavaScript",
-        "CSS",
-        "HTML",
-        "Python",
-        "React",
-      ],
+      techStack: ["JavaScript", "CSS", "HTML", "Python", "React"],
       description: `Ein Memory-Spiel programmiert mit ikonischen und lustigen Yu-Gi-Oh! Karten`,
       logo: PuzzleLogo,
       link: {
@@ -203,14 +236,8 @@ export const RESUME_DATA = {
     },
     {
       title: "Altan Mountain",
-      techStack: [
-        "TypeScript",
-        "CSS",
-        "HTML",
-        "Javascript",
-        "React",
-      ],
-      description: ` E-Commerce-Shop mit einem modernen Ansatz zur Produktanzeige, bei dem die Produkte aus dem Bildschirm hervorstechen und interaktiv sind.`,
+      techStack: ["TypeScript", "CSS", "HTML", "Javascript", "React"],
+      description: ` E-Commerce-Shop mit einem modernen Ansatz zur Produktanzeige, bei dem die Produkte aus dem Bildschirm hervorstechen und interaktiv sind`,
       logo: false,
       link: {
         label: "",
@@ -219,12 +246,8 @@ export const RESUME_DATA = {
     },
     {
       title: "Wetter App",
-      techStack: [
-        "CSS",
-        "HTML",
-        "Javascript",
-      ],
-      description: ` Eine Wetter-App, welche den aktuellen Standort des Benutzers abruft und automatisch das aktuelle Wetter anzeigt, mit der Verwendung der OpenCage Data API. `,
+      techStack: ["CSS", "HTML", "Javascript"],
+      description: ` Eine Wetter-App, welche den aktuellen Standort des Benutzers abruft und automatisch das aktuelle Wetter anzeigt, mit der Verwendung der OpenCage Data API `,
       logo: false,
       link: {
         label: "",
@@ -233,13 +256,8 @@ export const RESUME_DATA = {
     },
     {
       title: "Lebenslauf/CV App",
-      techStack: [
-        "CSS",
-        "HTML",
-        "Javascript",
-        "React",
-      ],
-      description: `Eine Webanwendung, um das Eingeben von Lebensläufen ansprechender zu gestalten. Sie sehen sofort die Änderungen am Lebenslauf, während Sie sie eingeben.`,
+      techStack: ["CSS", "HTML", "Javascript", "React"],
+      description: `Eine Webanwendung, für ein einfaches erstellen von Lebensläufen`,
       logo: false,
       link: {
         label: "",
@@ -248,16 +266,12 @@ export const RESUME_DATA = {
     },
     {
       title: "Etch-A-Sketch",
-      techStack: [
-        "CSS",
-        "HTML",
-        "Javascript",
-      ],
-      description: `Dem nostalgischen Kinderspielzeugleinwand nachempfunden, mit einer verstellbaren Leinwandgröße, diversen Malwerkzeugen sowie einer Speicherfunktion.`,
+      techStack: ["CSS", "HTML", "Javascript"],
+      description: `Der nostalgischen Kinderspielzeugleinwand nachempfunden, mit einer verstellbaren Leinwandgröße, diversen Malwerkzeugen sowie einer Speicherfunktion`,
       logo: false,
       link: {
         label: "",
-        href: "https://github.com/codetwentyfive/Etch-A-Sketch",
+        href: "https://codetwentyfive.github.io/Etch-A-Sketch/",
       },
     },
     {
