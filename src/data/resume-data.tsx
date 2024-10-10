@@ -19,6 +19,7 @@ import {
   PuzzleLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GlobeIcon } from "lucide-react";
 
 export const RESUME_DATA = {
   name: "Chingis Zwecker E.",
@@ -40,10 +41,10 @@ export const RESUME_DATA = {
   otherskillsheader:"Kentnisse und Fähigkeiten:",
   languagesheader:"Sprachen:",
 
-    personalWebsiteUrl: "https://www.chingis.dev",
+
   contact: {
     email: "chingiszwecker@gmail.com",
-    tel: "+4915735203036",
+    tel: "+49 1573 5203036",
     social: [
       {
         name: "GitHub",
@@ -55,11 +56,11 @@ export const RESUME_DATA = {
         url: "https://www.linkedin.com/in/chingis-zwecker/",
         icon: LinkedInIcon,
       },
-      /*{
-        name: "X",
-        url: "https://x.com/",
-        icon: XIcon,
-      },*/
+      {
+        name: "Personal Website",
+        url: "https://chingis.dev",
+        icon: GlobeIcon,
+      },
     ],
   },
   skills: [
