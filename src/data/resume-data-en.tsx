@@ -24,7 +24,7 @@ export const RESUME_DATA = {
   initials: "CE",
   location: "Karlsruhe, Deutschland, CET",
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
-  avatarUrl: "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1715817600&v=beta&t=RQ6wY7PKLit1a7Kin1U7SE6d1GGXPmIdZN75Y6gtqB8",
+  avatarUrl: "./images/pfp.jpeg",
   personalWebsiteUrl: "https://chingis-portfolio-3d.vercel.app/",
   contact: {
     email: "chingisenkhbaatar@gmail.com",
@@ -63,6 +63,8 @@ export const RESUME_DATA = {
     "Git",
     "Github",
     "Bash",
+
+
   ],
   otherSkills: [
     "Presentation and Visualization",
@@ -70,20 +72,18 @@ export const RESUME_DATA = {
     "MS Office",
     "Sound Design",
     "Photoshop",
+    "SEO",
+    "Performance Optimization",
+    "User Experience",
     
   ],
   languages: [
 
-    {language:"German",
-  proficiency:"native"},
-  {language:"Mongolian",
-  proficiency:"native"},
-  {language:"English",
-  proficiency:"fluent"},
-  {language:"French",
-  proficiency:"novice"},
-  {language:"Latin",
-  proficiency:"novice"},
+    { language: "German", proficiency: "native" },
+    { language: "Mongolian", proficiency: "native" },
+    { language: "English", proficiency: "fluent" },
+    { language: "French", proficiency: "novice" },
+    { language: "Latin", proficiency: "novice" },
     
     
   ],
@@ -178,6 +178,23 @@ export const RESUME_DATA = {
         href: "",
       },
     },
-
+    {
+      title: "Potera Reinigungsdienste – Entwicklung einer Professionellen Online-Plattform",
+      techStack: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Nodemailer",
+        "Framer Motion",
+        "Accessibility",
+      ],
+      description: `...`, // Existing description
+      logo: false,
+      link: {
+        label: "",
+        href: "https://www.poterareinigung.de",
+      },
+    },
   ],
 } as const;

@@ -22,11 +22,10 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Chingis Zwecker E.",
-  initials: "CZ",
+  initials: "CE",
   location: "Karlsruhe, Deutschland, CET",
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
-  avatarUrl:
-    "https://media.licdn.com/dms/image/D4E03AQE8f_2EP-ht4Q/profile-displayphoto-shrink_800_800/0/1708288279780?e=1722470400&v=beta&t=cUBRWRurwicWmdylqkGO42S2fvOjTyfIzW3D9r1Z-uE",
+  avatarUrl: "/images/pfp.jpeg",
   personalWebsiteUrl: "https://chingis.dev",
   contact: {
     email: "chingiszwecker@gmail.com",
@@ -69,6 +68,11 @@ export const RESUME_DATA = {
     "Git",
     "Github",
     "Bash",
+    "Next.js",
+    "Tailwind CSS",
+    "Nodemailer",
+    "Framer Motion",
+    
   ],
   otherSkills: [
     "Visuelle Präsentation und Kommunikation",
@@ -77,6 +81,7 @@ export const RESUME_DATA = {
     "Sound Design",
     "Photoshop",
     "Excel",
+    "SEO",
   ],
   languages: [
     { language: "Deutsch", proficiency: "Muttersprache" },
@@ -88,7 +93,7 @@ export const RESUME_DATA = {
   education: [
     {
       school: "The Odin Project",
-      degree: "Foundations,Full Stack Javascript",
+      degree: "Selbststudium in Foundations und Full Stack JavaScript Entwicklung.",
       start: "2022",
       end: "2024",
     },
@@ -100,7 +105,7 @@ export const RESUME_DATA = {
     },
     {
       school: "Ludwig Maximilian Universität, München",
-      degree: "Jura",
+      degree: "Rechtswissenschaften",
       start: "2013",
       end: "2016",
     },
@@ -112,6 +117,20 @@ export const RESUME_DATA = {
     },
   ],
   work: [
+    // Work Experience
+
+    {
+      company: "Potera Reinigung",
+      link: "https://www.poterareinigung.de",
+      badges: ["Entwicklung einer Professionellen Online-Präsenz"],
+      title: "Freelancer Web Developer",
+      end: "2024",
+      description: `-Entwicklung einer modernen Website für eine Reinigungsfirma mit responsivem Design und interaktiven Elementen..
+      -Implementierung eines sicheren Kontaktformulars zur effizienten Verarbeitung von Kundenanfragen.
+-Anwendung von SEO-Strategien zur Steigerung der Sichtbarkeit in Suchmaschinen.
+-Optimierung der Website-Performance durch effiziente Code-Struktur und Ressourcennutzung.
+`,
+    },
     {
       company: "Homecare",
       link: "",
@@ -132,9 +151,9 @@ export const RESUME_DATA = {
       title: "Chief Operator ",
       start: "2017",
       end: "2019",
-      description: `-Schulung neuer Teammitglieder.
-        -Reparatur verschiedener Geräte, einschließlich Telefone, Tablets und Laptops.
-        -Entwicklung und Umsetzung von Verkaufsstrategien.
+      description: `-Schulung neuer Teammitglieder in Reparaturtechniken und Kundenservice.
+        -Reparatur und Wartung von Smartphones, Tablets und Laptops.
+        -Entwicklung und Umsetzung von Verkaufsstrategien zur Umsatzsteigerung.
     
     `,
     },
@@ -162,6 +181,7 @@ export const RESUME_DATA = {
       description:
         "-Dreifacher Sieger und einmal Zweiter in diversen Spracholympiaden.",
     },
+    
   ],
 
   projects: [
@@ -238,6 +258,24 @@ export const RESUME_DATA = {
       link: {
         label: "",
         href: "https://github.com/codetwentyfive/Etch-A-Sketch",
+      },
+    },
+    {
+      title: "PoteraReinigung",
+      techStack: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Nodemailer",
+        "Framer Motion",
+        "Accessibility",
+      ],
+      description: `Entwicklung einer modernen Website für eine Reinigungsfirma mit Kontaktformular und Animationen.`,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://www.poterareinigung.de",
       },
     },
   ],
