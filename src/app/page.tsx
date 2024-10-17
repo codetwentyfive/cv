@@ -182,7 +182,7 @@ export default function Page() {
             );
           })}
         </Section>
-        <Section className="scroll-mb-16">
+        <Section className="print-force-new-page 	scroll-mb-16">
           <h2 className="text-xl font-bold">{RESUME_DATA.educationheader}</h2>
           {RESUME_DATA.education.map((education) => {
             return (
@@ -202,7 +202,7 @@ export default function Page() {
             );
           })}
         </Section>
-        <Section className="print-force-new-page scroll-mb-16">
+        <Section className="scroll-mb-16">
           <h2 className="text-xl font-bold">{RESUME_DATA.projectsheader}</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
@@ -218,8 +218,8 @@ export default function Page() {
             })}
           </div>
         </Section>
-        <Section>
-          <h2 className="text-xl font-bold">{RESUME_DATA.experiencesheader}</h2>
+        <Section className="print-force-new-page scroll-mb-16">
+          <h2 className=" text-xl font-bold">{RESUME_DATA.experiencesheader}</h2>
           {RESUME_DATA.experience.map((experience) => {
             return (
               <Card key={experience.company}>
