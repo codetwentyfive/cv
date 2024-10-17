@@ -19,30 +19,31 @@ import {
   PuzzleLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GlobeIcon } from "lucide-react";
 
 export const RESUME_DATA = {
   name: "Chingis Zwecker E.",
   initials: "CZ",
   location: "Karlsruhe, Germany, CET",
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
-    relocation:"Open to relocation: Yes",
-  nationality:"Nationality: Mongolian",
-  workpermit:"Work authorization: Yes",
-  birthday:"Birthdate: 4 December 1995",
-  permit:"Residence permit: Family residence permit (Marriage)",
-  workheader:"Work Experience:",
-  educationheader:"Education:",
-  projectsheader:"Projects:",
-  experiencesheader:"Experiences:",
-  programmingskillsheader:"Programming Skills:",
-  otherskillsheader:"Other Skills:",
-  languagesheader:"Languages:",
-    personalWebsiteUrl: "https://www.chingis.dev",
-  avatarUrl: "./images/pfp.jpeg",
-  personalWebsiteUrl: "https://chingis-portfolio-3d.vercel.app/",
+  avatarUrl: "/images/pfp.jpeg",
+  personalWebsiteUrl: "https://chingis.dev",
+  relocation: "Open to relocation: Yes",
+  nationality: "Nationality: Mongolian",
+  permit: "Residence permit: Permanent residence",
+  workpermit: "Work authorization: Permitted",
+  birthday: "Birthdate: December 4, 1995",
+  workheader: "Work Experience:",
+  educationheader: "Education:",
+  projectsheader: "Projects:",
+  experiencesheader: "Experiences:",
+  programmingskillsheader: "Programming Skills:",
+  otherskillsheader: "Other Skills:",
+  languagesheader: "Languages:",
+
   contact: {
     email: "chingiszwecker@gmail.com",
-    tel: "+4915735203036",
+    tel: "+49 1573 5203036",
     social: [
       {
         name: "GitHub",
@@ -54,11 +55,11 @@ export const RESUME_DATA = {
         url: "https://www.linkedin.com/in/chingis-zwecker/",
         icon: LinkedInIcon,
       },
-      /*{
-        name: "X",
-        url: "https://x.com/",
-        icon: XIcon,
-      },*/
+      {
+        name: "Personal Website",
+        url: "https://chingis.dev",
+        icon: GlobeIcon,
+      },
     ],
   },
   skills: [
@@ -81,9 +82,11 @@ export const RESUME_DATA = {
     "Git",
     "Github",
     "Bash",
+    "Next.js",
+    "Tailwind CSS",
+    "Nodemailer",
+    "Framer Motion",
     "Linux",
-
-
   ],
   otherSkills: [
     "Visual presentation and communication",
@@ -93,9 +96,6 @@ export const RESUME_DATA = {
     "Photoshop",
     "Excel",
     "SEO",
-    "Performance Optimization",
-    "User Experience",
-    
   ],
   languages: [
     { language: "German", proficiency: "Native" },
@@ -103,82 +103,85 @@ export const RESUME_DATA = {
     { language: "English", proficiency: "Fluent" },
     { language: "French", proficiency: "Basic knowledge" },
     { language: "Latin", proficiency: "Basic knowledge" },
-
-    { language: "German", proficiency: "native" },
-    { language: "Mongolian", proficiency: "native" },
-    { language: "English", proficiency: "fluent" },
-    { language: "French", proficiency: "novice" },
-    { language: "Latin", proficiency: "novice" },
-    
-    
   ],
   education: [
     {
       school: "The Odin Project, freeCodeCamp, MDN Web Docs",
       degree: "Foundations, Full Stack JavaScript, Certified MongoDB Developer",
-      start: "2021",
-      end: "2024",
+      start: "December 2021",
+      end: "February 2024",
     },
     {
       school: "University of Passau",
-      degree: "Cultural Economics(Bachelor) - unfinished",
-      start: "2016",
-      end: "2019",
+      degree: "Cultural Economics (Bachelor) - unfinished",
+      start: "October 2016",
+      end: "July 2019",
     },
     {
       school: "Ludwig Maximilian University, Munich",
-      degree: "Law(Bachelor) - unfinsihed",
-      start: "2013",
-      end: "2016",
+      degree: "Law (Bachelor) - unfinished",
+      start: "October 2014",
+      end: "February 2016",
     },
     {
       school: "Studienkolleg Munich",
-      degree: "Studienkolleg Final Exam",
-      start: "2011",
-      end: "2012",
+      degree: "Fachabitur",
+      start: "October 2013",
+      end: "July 2014",
     },
   ],
   work: [
     {
+      company: "Potera Cleaning",
+      link: "https://www.poterareinigung.de",
+      badges: ["Development of a Professional Online Presence"],
+      title: "Freelance Web Developer",
+      start: "August 2024",
+      end: "October 2024",
+      description: `-Development of a modern website for a cleaning company with responsive design and interactive elements.
+-Implementation of a secure contact form for efficient processing of customer inquiries.
+-Application of SEO strategies to increase visibility in search engines.
+-Optimization of website performance through efficient code structure and resource utilization.
+`,
+    },
+    {
       company: "Care for severely ill father",
       link: "",
-      badges: [""],
+      badges: ["Karlsruhe"],
       title: "Caregiver",
-      start: "2021",
+      start: "April 2021",
       end: "now",
       description: [
-        `-Managing daily affairs and well-being of my care-dependent father
-        -Assistance with financial and administrative tasks
+        `-Managing daily affairs and well-being of my care-dependent father (Pflegegrad 4)
+        -Assistance with administrative tasks
   `,
       ],
     },
     {
       company: "Career Reorientation",
       link: "",
-      badges: [""],
+      badges: ["Karlsruhe, Passau"],
       title: "Activities:",
-      start: "2019",
-      end: "2021",
+      start: "May 2019",
+      end: "April 2021",
       description: [
-        `-Learned new technologies and programming skills through online courses and self-study
-        -Assembled PCs and learned more about hardware
+        `-Learning new technologies and programming skills through online courses and self-study
+        -Assembling PCs and learning more about hardware
         -Further education in music production and music theory
-        -Worked as a bartender and bouncer
+        -Work as a bartender and bouncer
                   `,
       ],
     },
-
     {
       company: "Apples & Berries",
       link: "",
       badges: ["Phones, Tablets, and more"],
       title: "Technician & Salesman",
-      start: "2017",
-      end: "2019",
-      description: `-Repair of various devices, including phones, tablets, and laptops
-      -Training new team members
-      -Managing inventory and ordering spare parts
-    
+      start: "September 2017",
+      end: "July 2019",
+      description: `-Training new team members in repair techniques and customer service.
+        -Repair and maintenance of smartphones, tablets, and laptops.
+        -Development and implementation of sales strategies to increase revenue.
     `,
     },
   ],
@@ -188,13 +191,11 @@ export const RESUME_DATA = {
       link: "https://2021.rca.ac.uk/students/andra-pop-jurj/",
       badges: ["Sound Designer"],
       title: "Sound Designer",
-      start: "2020",
-      end: "2021",
-
+      start: "January 2021",
+      end: "May 2021",
       description: `-Development of a unique soundscape for the project 'Monsters and Ghosts of the Far North'
         -Presentation of works in various exhibitions nationwide`,
     },
-
     {
       company: "Mongolian Language Olympiad",
       link: "",
@@ -206,8 +207,25 @@ export const RESUME_DATA = {
         "-Three-time winner and once second place in various language olympiads",
     },
   ],
-
   projects: [
+    {
+      title: "Potera Cleaning Services",
+      techStack: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Nodemailer",
+        "Framer Motion",
+        "Accessibility",
+      ],
+      description: `Development of a professional online platform for a cleaning company with a contact form and animations.`,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://www.poterareinigung.de",
+      },
+    },
     {
       title: "Yu-Gi-Oh! Card Memory",
       techStack: ["JavaScript", "CSS", "HTML", "Python", "React"],
@@ -258,23 +276,6 @@ export const RESUME_DATA = {
         href: "https://codetwentyfive.github.io/Etch-A-Sketch/",
       },
     },
-    {
-      title: "Potera Reinigungsdienste – Entwicklung einer Professionellen Online-Plattform",
-      techStack: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Nodemailer",
-        "Framer Motion",
-        "Accessibility",
-      ],
-      description: `...`, // Existing description
-      logo: false,
-      link: {
-        label: "",
-        href: "https://www.poterareinigung.de",
-      },
-    },
+ 
   ],
 } as const;

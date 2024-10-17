@@ -28,19 +28,18 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
   avatarUrl: "/images/pfp.jpeg",
   personalWebsiteUrl: "https://chingis.dev",
-  relocation:"Umzugsbereit: Ja",
-  nationality:"Nationalität: Mongolisch",
-  permit:"Aufenthaltserlaubnis: Dauerhafter Aufenthalt",
-  workpermit:"Erwerbstätigkeit: Erlaubt",
-  birthday:" Geburtsdatum: 4 Dezember 1995",
-  workheader:"Beruflicher Werdegang:",
-  educationheader:"Ausbildung:",
-  projectsheader:"Projekte:",
-  experiencesheader:"Erfahrungen:",
-  programmingskillsheader:"Programmier Kenntnisse:",
-  otherskillsheader:"Kentnisse und Fähigkeiten:",
-  languagesheader:"Sprachen:",
-
+  relocation: "Umzugsbereit: Ja",
+  nationality: "Nationalität: Mongolisch",
+  permit: "Aufenthaltserlaubnis: Dauerhafter Aufenthalt",
+  workpermit: "Erwerbstätigkeit: Erlaubt",
+  birthday: " Geburtsdatum: 4 Dezember 1995",
+  workheader: "Beruflicher Werdegang:",
+  educationheader: "Ausbildung:",
+  projectsheader: "Projekte:",
+  experiencesheader: "Erfahrungen:",
+  programmingskillsheader: "Programmier Kenntnisse:",
+  otherskillsheader: "Kentnisse und Fähigkeiten:",
+  languagesheader: "Sprachen:",
 
   contact: {
     email: "chingiszwecker@gmail.com",
@@ -87,7 +86,7 @@ export const RESUME_DATA = {
     "Tailwind CSS",
     "Nodemailer",
     "Framer Motion",
-    
+
     "Linux",
   ],
   otherSkills: [
@@ -108,14 +107,11 @@ export const RESUME_DATA = {
   ],
   education: [
     {
-      school: "The Odin Project",
-      degree: "Selbststudium in Foundations und Full Stack JavaScript Entwicklung.",
-      start: "2022",
-      end: "2024",
+      degree:
+        "Selbststudium in Foundations und Full Stack JavaScript Entwicklung.",
       school: "The Odin Project,freeCodeCamp,MDN Web Doc",
-      degree: "Foundations,Full Stack Javascript,Certified MongoDB Developer",
       start: "Dezember 2021",
-      end: "jetzt",
+      end: "Februar 2024",
     },
     {
       school: "Universität von Passau",
@@ -125,9 +121,6 @@ export const RESUME_DATA = {
     },
     {
       school: "Ludwig Maximilian Universität, München",
-      degree: "Rechtswissenschaften",
-      start: "2013",
-      end: "2016",
       degree: "Rechtswissenschaften (Bachelor) - nicht abgeschlossen",
       start: "Oktober 2014",
       end: "Februar 2016",
@@ -146,15 +139,16 @@ export const RESUME_DATA = {
       company: "Potera Reinigung",
       link: "https://www.poterareinigung.de",
       badges: ["Entwicklung einer Professionellen Online-Präsenz"],
-      title: "Freelancer Web Developer",
-      end: "2024",
+      title: "Freelance Web Entwickler",
+      start: "August 2024",
+      end: "Oktober 2024",
       description: `-Entwicklung einer modernen Website für eine Reinigungsfirma mit responsivem Design und interaktiven Elementen..
       -Implementierung eines sicheren Kontaktformulars zur effizienten Verarbeitung von Kundenanfragen.
 -Anwendung von SEO-Strategien zur Steigerung der Sichtbarkeit in Suchmaschinen.
 -Optimierung der Website-Performance durch effiziente Code-Struktur und Ressourcennutzung.
 `,
     },
-    
+
     {
       company: "Pflege schwer erkrankten Vaters",
       link: "",
@@ -163,7 +157,7 @@ export const RESUME_DATA = {
       start: "April 2021",
       end: "jetzt",
       description: [
-        `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens meines pflegebedürftigen Vaters
+        `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens meines pflegebedürftigen Vaters (Pflegegrad 4)
         -Unterstützung in administrativen Aufgaben
   `,
       ],
@@ -188,9 +182,9 @@ export const RESUME_DATA = {
       company: "Apples & Berries",
       link: "",
       badges: ["Reperatur & Verkauf"],
-      title: "Chief Operator ",
-      start: "2017",
-      end: "2019",
+      title: "Techniker & Verkäufer",
+      start: "September 2017",
+      end: "Juli 2019",
       description: `-Schulung neuer Teammitglieder in Reparaturtechniken und Kundenservice.
         -Reparatur und Wartung von Smartphones, Tablets und Laptops.
         -Entwicklung und Umsetzung von Verkaufsstrategien zur Umsatzsteigerung.
@@ -221,12 +215,29 @@ export const RESUME_DATA = {
       description:
         "-Dreifacher Sieger und einmal Zweiter in diversen Spracholympiaden",
     },
-    
   ],
 
   projects: [
     {
-      title: "Yu-Gi-Oh! Card Memory",
+      title: "Potera Reinigung",
+      techStack: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Nodemailer",
+        "Framer Motion",
+        "Accessibility",
+      ],
+      description: `Entwicklung einer modernen Website für eine Reinigungsfirma mit Kontaktformular und Animationen.`,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://www.poterareinigung.de",
+      },
+    },
+    {
+      title: "Yu-Gi-Oh! Erinnerungsspiel",
       techStack: ["JavaScript", "CSS", "HTML", "Python", "React"],
       description: `Ein Memory-Spiel programmiert mit ikonischen und lustigen Yu-Gi-Oh! Karten`,
       logo: PuzzleLogo,
@@ -273,24 +284,6 @@ export const RESUME_DATA = {
       link: {
         label: "",
         href: "https://codetwentyfive.github.io/Etch-A-Sketch/",
-      },
-    },
-    {
-      title: "PoteraReinigung",
-      techStack: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Nodemailer",
-        "Framer Motion",
-        "Accessibility",
-      ],
-      description: `Entwicklung einer modernen Website für eine Reinigungsfirma mit Kontaktformular und Animationen.`,
-      logo: false,
-      link: {
-        label: "",
-        href: "https://www.poterareinigung.de",
       },
     },
   ],
