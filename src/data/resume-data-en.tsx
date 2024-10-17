@@ -134,7 +134,7 @@ export const RESUME_DATA = {
     {
       company: "Potera Cleaning",
       link: "https://www.poterareinigung.de",
-      badges: ["Development of a Professional Online Presence"],
+      badges: ["Full Stack Development"],
       title: "Freelance Web Developer",
       start: "August 2024",
       end: "October 2024",
