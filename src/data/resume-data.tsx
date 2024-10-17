@@ -109,13 +109,13 @@ export const RESUME_DATA = {
     {
       degree:
         "Selbststudium in Foundations und Full Stack JavaScript Entwicklung.",
-      school: "The Odin Project,freeCodeCamp,MDN Web Doc",
+      school: "The Odin Project, freeCodeCamp, MDN Web Doc",
       start: "Dezember 2021",
       end: "Februar 2024",
     },
     {
-      school: "Universität von Passau",
-      degree: "Kulturwirschaftwissenschaften (Bachelor) - nicht abgeschlossen",
+      school: "Uni Passau",
+      degree: "Kulturwissenschaft (Bachelor) - nicht abgeschlossen",
       start: "Oktober 2016",
       end: "Juli 2019",
     },
@@ -142,10 +142,10 @@ export const RESUME_DATA = {
       title: "Freelance Web Entwickler",
       start: "August 2024",
       end: "Oktober 2024",
-      description: `-Entwicklung einer modernen Website für eine Reinigungsfirma mit responsivem Design und interaktiven Elementen..
-      -Implementierung eines sicheren Kontaktformulars zur effizienten Verarbeitung von Kundenanfragen.
--Anwendung von SEO-Strategien zur Steigerung der Sichtbarkeit in Suchmaschinen.
--Optimierung der Website-Performance durch effiziente Code-Struktur und Ressourcennutzung.
+      description: `-Entwicklung einer modernen Website für eine Reinigungsfirma mit responsivem Design und interaktiven Elementen
+      -Implementierung eines sicheren Kontaktformulars zur effizienten Verarbeitung von Kundenanfragen
+      -Anwendung von SEO-Strategien zur Steigerung der Sichtbarkeit in Suchmaschinen
+      -Optimierung der Website-Performance durch effiziente Code-Struktur und Ressourcennutzung
 `,
     },
 
@@ -185,9 +185,9 @@ export const RESUME_DATA = {
       title: "Techniker & Verkäufer",
       start: "September 2017",
       end: "Juli 2019",
-      description: `-Schulung neuer Teammitglieder in Reparaturtechniken und Kundenservice.
-        -Reparatur und Wartung von Smartphones, Tablets und Laptops.
-        -Entwicklung und Umsetzung von Verkaufsstrategien zur Umsatzsteigerung.
+      description: `-Schulung neuer Teammitglieder in Reparaturtechniken und Kundenservice
+        -Reparatur und Wartung von Smartphones, Tablets und Laptops
+        -Entwicklung und Umsetzung von Verkaufsstrategien zur Umsatzsteigerung
     
     `,
     },
@@ -229,7 +229,7 @@ export const RESUME_DATA = {
         "Framer Motion",
         "Accessibility",
       ],
-      description: `Entwicklung einer modernen Website für eine Reinigungsfirma mit Kontaktformular und Animationen.`,
+      description: `Entwicklung einer modernen Website für eine Reinigungsfirma mit Kontaktformular und Animationen `,
       logo: false,
       link: {
         label: "",

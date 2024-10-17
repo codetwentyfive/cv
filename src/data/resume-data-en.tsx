@@ -138,10 +138,10 @@ export const RESUME_DATA = {
       title: "Freelance Web Developer",
       start: "August 2024",
       end: "October 2024",
-      description: `-Development of a modern website for a cleaning company with responsive design and interactive elements.
--Implementation of a secure contact form for efficient processing of customer inquiries.
--Application of SEO strategies to increase visibility in search engines.
--Optimization of website performance through efficient code structure and resource utilization.
+      description: `-Development of a modern website for a cleaning company with responsive design and interactive elements
+-Implementation of a secure contact form for efficient processing of customer inquiries
+-Application of SEO strategies to increase visibility in search engines
+-Optimization of website performance through efficient code structure and resource utilization
 `,
     },
     {
@@ -179,9 +179,9 @@ export const RESUME_DATA = {
       title: "Technician & Salesman",
       start: "September 2017",
       end: "July 2019",
-      description: `-Training new team members in repair techniques and customer service.
-        -Repair and maintenance of smartphones, tablets, and laptops.
-        -Development and implementation of sales strategies to increase revenue.
+      description: `-Training new team members in repair techniques and customer service
+        -Repair and maintenance of smartphones, tablets, and laptops
+        -Development and implementation of sales strategies to increase revenue
     `,
     },
   ],
@@ -219,7 +219,7 @@ export const RESUME_DATA = {
         "Framer Motion",
         "Accessibility",
       ],
-      description: `Development of a professional online platform for a cleaning company with a contact form and animations.`,
+      description: `Development of a professional online platform for a cleaning company with a contact form and animations`,
       logo: false,
       link: {
         label: "",
@@ -239,7 +239,7 @@ export const RESUME_DATA = {
     {
       title: "Altan Mountain",
       techStack: ["TypeScript", "CSS", "HTML", "JavaScript", "React"],
-      description: `An e-commerce shop with a modern approach to product display, where the products pop out of the screen and are interactive via mouse hover.`,
+      description: `An e-commerce shop with a modern approach to product display, where the products pop out of the screen and are interactive via mouse hover`,
       logo: false,
       link: {
         label: "",
@@ -249,7 +249,7 @@ export const RESUME_DATA = {
     {
       title: "Weather App",
       techStack: ["CSS", "HTML", "JavaScript"],
-      description: `A weather app that fetches the user's current location and automatically displays the current weather using the OpenCage Data API.`,
+      description: `A weather app that fetches the user's current location and automatically displays the current weather using the OpenCage Data API`,
       logo: false,
       link: {
         label: "",
@@ -259,7 +259,7 @@ export const RESUME_DATA = {
     {
       title: "Resume/CV App",
       techStack: ["CSS", "HTML", "JavaScript", "React"],
-      description: `A web application to make entering resumes more engaging. You see the changes to the resume instantly as you enter them.`,
+      description: `A web application to make entering resumes more engaging. You see the changes to the resume instantly as you enter them`,
       logo: false,
       link: {
         label: "",
@@ -269,7 +269,7 @@ export const RESUME_DATA = {
     {
       title: "Etch-A-Sketch",
       techStack: ["CSS", "HTML", "JavaScript"],
-      description: `Inspired by the nostalgic children's drawing toy, with an adjustable canvas size, various drawing tools, and a save function to share the artwork.`,
+      description: `Inspired by the nostalgic children's drawing toy, with an adjustable canvas size, various drawing tools, and a save function to share the artwork`,
       logo: false,
       link: {
         label: "",
