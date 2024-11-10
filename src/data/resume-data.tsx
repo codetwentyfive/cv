@@ -127,21 +127,34 @@ export const RESUME_DATA = {
     },
     {
       school: "Studienkolleg München",
-      degree: "Fachabitur",
+      degree: "Fachabitur 2,2",
       start: "Oktober 2013",
       end: "Juli 2014",
     },
   ],
   work: [
-    // Work Experience
+    //Work Experience
+    {
+      company: "The Strange Seeds",
+      link: "https://www.thestrangeseeds.com/",
+      badges: ["Full Stack Entwickler"],
+      title: "Freelance Web Entwickler",
+      start: "September 2024",
+      end: "Oktober 2024",
+      description: `-Entwicklung einer dynamischen Band-Website mit Next.js 14 und TypeScript
+        -Integration von Echtzeit-Konzertauflistungen und Musik-Streaming-Diensten
+        -Implementierung von SEO-Optimierungen und strukturierten Daten
+        -Erstellung einer interaktiven Bildergalerie und eines Pressekit-Bereichs
+        -Entwicklung eines responsiven Designs mit Social-Media-Integration`,
+    },
 
     {
       company: "Potera Reinigung",
       link: "https://www.poterareinigung.de",
       badges: ["Full Stack Entwickler"],
       title: "Freelance Web Entwickler",
-      start: "August 2024",
-      end: "Oktober 2024",
+      start: "Juni 2024",
+      end: "September 2024",
       description: `-Entwicklung einer modernen Website für eine Reinigungsfirma mit responsivem Design und interaktiven Elementen
       -Implementierung eines sicheren Kontaktformulars zur effizienten Verarbeitung von Kundenanfragen
       -Anwendung von SEO-Strategien zur Steigerung der Sichtbarkeit in Suchmaschinen
@@ -150,15 +163,15 @@ export const RESUME_DATA = {
     },
 
     {
-      company: "Pflege schwer erkrankten Vaters",
+      company: "Angehörigenpflege",
       link: "",
       badges: ["Karlsruhe"],
       title: "Betreuer",
       start: "April 2021",
       end: "jetzt",
       description: [
-        `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens meines pflegebedürftigen Vaters (Pflegegrad 4)
-        -Unterstützung in administrativen Aufgaben
+        `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens meines pflegebedürftigen Vaters
+      
   `,
       ],
     },
@@ -218,6 +231,25 @@ export const RESUME_DATA = {
   ],
 
   projects: [
+    {
+      title: "Strange Seeds",
+      techStack: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Nodemailer",
+        "Framer Motion",
+        "Google SEO",
+        "Accessibility",
+      ],
+      description: `Entwicklung einer dynamischen Band-Website mit Echtzeit-Konzertauflistungen, Musik-Integration über Spotify und YouTube, interaktiver Bildergalerie und Pressekit-Bereich`,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://www.thestrangeseeds.com/",
+      },
+    },
     {
       title: "Potera Reinigung",
       techStack: [

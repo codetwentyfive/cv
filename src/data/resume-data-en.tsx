@@ -125,18 +125,32 @@ export const RESUME_DATA = {
     },
     {
       school: "Studienkolleg Munich",
-      degree: "Fachabitur",
+      degree: "Fachabitur 2,2",
       start: "October 2013",
       end: "July 2014",
     },
   ],
   work: [
     {
+      company: "Strange Seeds",
+      link: "https://www.thestrangeseeds.com/",
+      badges: ["Full Stack Development"],
+      title: "Freelance Web Developer",
+      start: "September 2024",
+      end: "Oktober 2024",
+      description: `-Development of a dynamic band website using Next.js 14 and TypeScript
+        -Integration of real-time concert listings and music streaming services
+        -Implementation of SEO optimizations and structured data
+        -Creation of an interactive image gallery and press kit section
+        -Development of responsive design with social media integration`,
+    },
+    {
+      
       company: "Potera Cleaning",
       link: "https://www.poterareinigung.de",
       badges: ["Full Stack Development"],
       title: "Freelance Web Developer",
-      start: "August 2024",
+      start: "June 2024",
       end: "October 2024",
       description: `-Development of a modern website for a cleaning company with responsive design and interactive elements
 -Implementation of a secure contact form for efficient processing of customer inquiries
@@ -145,15 +159,15 @@ export const RESUME_DATA = {
 `,
     },
     {
-      company: "Care for severely ill father",
+      company: "Family Caregiver",
       link: "",
       badges: ["Karlsruhe"],
       title: "Caregiver",
       start: "April 2021",
-      end: "now",
+      end: "",
       description: [
-        `-Managing daily affairs and well-being of my care-dependent father (Pflegegrad 4)
-        -Assistance with administrative tasks
+        `-Managing daily affairs and well-being of my care-dependent father.
+        
   `,
       ],
     },
@@ -208,6 +222,25 @@ export const RESUME_DATA = {
     },
   ],
   projects: [
+    {
+    title: "Strange Seeds",
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Nodemailer",
+      "Framer Motion",
+      "Google SEO",
+      "Accessibility",
+    ],
+    description: `Development of a dynamic band website featuring real-time concert listings, Spotify and YouTube music integration, interactive image gallery, and press kit section`,
+    logo: false,
+    link: {
+        label: "",
+        href: "https://www.thestrangeseeds.com/",
+      },
+    },
     {
       title: "Potera Cleaning Services",
       techStack: [
