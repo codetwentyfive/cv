@@ -28,18 +28,20 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Karlsruhe",
   avatarUrl: "/images/pfp.jpeg",
   personalWebsiteUrl: "https://chingis.dev",
+  about: "Full Stack Entwickler spezialisiert auf moderne Webtechnologien und skalierbare Anwendungen",
+  summary: "Erfahrener Full Stack Entwickler mit Expertise in Next.js, TypeScript und React. Nachgewiesene Erfolge in der Entwicklung skalierbarer Webanwendungen mit Fokus auf Performance und Benutzererfahrung. Fundierte Erfahrung in E-Commerce-Plattformen und responsivem Webdesign.",
   relocation: "Umzugsbereit: Ja",
   nationality: "Nationalität: Mongolisch",
   permit: "Aufenthaltserlaubnis: Dauerhafter Aufenthalt",
   workpermit: "Erwerbstätigkeit: Erlaubt",
-  birthday: " Geburtsdatum: 4 Dezember 1995",
-  workheader: "Beruflicher Werdegang:",
-  educationheader: "Ausbildung:",
-  projectsheader: "Projekte:",
-  experiencesheader: "Erfahrungen:",
-  programmingskillsheader: "Programmier Kenntnisse:",
-  otherskillsheader: "Kentnisse und Fähigkeiten:",
-  languagesheader: "Sprachen:",
+  birthday: "Geburtsdatum: 4. Dezember 1995",
+  workheader: "Berufliche Erfahrung:",
+  educationheader: "Ausbildung & Zertifizierungen:",
+  projectsheader: "Ausgewählte Projekte:",
+  experiencesheader: "Weitere Erfahrungen:",
+  programmingskillsheader: "Technische Fähigkeiten:",
+  otherskillsheader: "Berufliche Kompetenzen:",
+  languagesheader: "Sprachkenntnisse:",
 
   contact: {
     email: "chingiszwecker@gmail.com",
@@ -56,60 +58,51 @@ export const RESUME_DATA = {
         icon: LinkedInIcon,
       },
       {
-        name: "Personal Website",
+        name: "Portfolio",
         url: "https://chingis.dev",
         icon: GlobeIcon,
       },
     ],
   },
   skills: [
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "TypeScript",
-    "Angular",
-    "React",
-    "Node.js",
-    "MongoDB",
-    "PHP",
-    "MySQL",
-    "Express.js",
-    "three.js",
-    "NPM",
-    "Webpack",
-    "Parcel",
-    "Jest",
-    "Git",
-    "Github",
-    "Bash",
-    "Next.js",
-    "Tailwind CSS",
-    "Nodemailer",
-    "Framer Motion",
-
-    "Linux",
+    "TypeScript/JavaScript",
+    "React.js/Next.js",
+    "Node.js/Express.js",
+    "MongoDB/PostgreSQL",
+    "REST APIs/GraphQL",
+    "Docker/Containerisierung",
+    "CI/CD/Git",
+    "AWS/Cloud Services",
+    "HTML5/CSS3",
+    "Tailwind CSS/Shadcn UI",
+    "Unit Testing/Jest",
+    "Performance-Optimierung",
+    "Responsive Design",
+    "SEO/Web Analytics",
+    "Agile/Scrum",
+    "System-Architektur",
   ],
   otherSkills: [
-    "Visuelle Präsentation und Kommunikation",
-    "Business Englisch",
-    "MS Office",
-    "Sound Design",
-    "Photoshop",
-    "Excel",
-    "SEO",
+    "Technische Kommunikation",
+    "Projektmanagement",
+    "Problemlösung",
+    "Teamführung",
+    "Kundenbeziehungen",
+    "UI/UX Design",
+    "Digital Marketing",
+    "Content-Strategie",
   ],
   languages: [
-    { language: "Deutsch", proficiency: "Muttersprache" },
-    { language: "Mongolisch", proficiency: "Muttersprache" },
-    { language: "Englisch", proficiency: "Verhandlungssicher" },
-    { language: "Französisch", proficiency: "Grundkenntnisse" },
-    { language: "Latein", proficiency: "Grundkenntnisse" },
+    { language: "Deutsch", proficiency: "Muttersprachlich (C2)" },
+    { language: "Mongolisch", proficiency: "Muttersprachlich (C2)" },
+    { language: "Englisch", proficiency: "Verhandlungssicher (C2)" },
+    { language: "Französisch", proficiency: "Grundkenntnisse (A2)" },
+    { language: "Latein", proficiency: "Basiskenntnisse (A1)" },
   ],
   education: [
     {
-      degree:
-        "Selbststudium in Foundations und Full Stack JavaScript Entwicklung.",
-      school: "The Odin Project, freeCodeCamp, MDN Web Doc",
+      school: "The Odin Project, freeCodeCamp, MDN Web Docs",
+      degree: "Full Stack JavaScript Entwicklung, MongoDB Entwickler Zertifizierung",
       start: "Dezember 2021",
       end: "Februar 2024",
     },
@@ -133,91 +126,152 @@ export const RESUME_DATA = {
     },
   ],
   work: [
-    // Work Experience
-
+    {
+      company: "HumTerra",
+      link: "https://humterra.vercel.app",
+      badges: ["Leitender Entwickler", "E-Commerce Plattform"],
+      title: "Full Stack Entwickler",
+      start: "Dezember 2024",
+      end: "Heute",
+      description: `• Architektur und Entwicklung einer skalierbaren E-Commerce-Plattform mit Next.js 14, TypeScript und Server Components
+• Implementation eines sicheren Authentifizierungssystems mit NextAuth.js und rollenbasierter Zugriffskontrolle
+• Design und Optimierung des Datenbankschemas mit Prisma ORM und PostgreSQL
+• Entwicklung responsiver UI-Komponenten mit Tailwind CSS und Shadcn UI
+• Integration von Zahlungsabwicklung und Bestellverwaltung
+• Erreichung eines 100% Performance-Scores auf Google Lighthouse 
+• Containerisierung der Anwendung mit Docker für konsistentes Deployment`,
+    },
+    {
+      company: "The Strange Seeds",
+      link: "https://thestrangeseeds.com",
+      badges: ["Frontend-Spezialist", "API-Integration"],
+      title: "Full Stack Entwickler",
+      start: "Oktober 2024",
+      end: "Dezember 2024",
+      description: `• Entwicklung einer modernen Band-Website mit Next.js und TypeScript, Verbesserung der Ladezeiten
+• Integration von Spotify und YouTube APIs für nahtloses Media-Streaming
+• Implementation eines automatisierten Konzertmanagement-Systems, Reduzierung manueller Updates
+• SEO-Optimierung mit einer Steigerung des organischen Traffics
+• Entwicklung einer responsiven Bildergalerie mit Lazy Loading und WebP-Optimierung`,
+    },
     {
       company: "Potera Reinigung",
       link: "https://www.poterareinigung.de",
-      badges: ["Full Stack Entwickler"],
-      title: "Freelance Web Entwickler",
+      badges: ["Full Stack Entwicklung", "Branding"],
+      title: "Full Stack Entwickler",
       start: "August 2024",
       end: "Oktober 2024",
-      description: `-Entwicklung einer modernen Website für eine Reinigungsfirma mit responsivem Design und interaktiven Elementen
-      -Implementierung eines sicheren Kontaktformulars zur effizienten Verarbeitung von Kundenanfragen
-      -Anwendung von SEO-Strategien zur Steigerung der Sichtbarkeit in Suchmaschinen
-      -Optimierung der Website-Performance durch effiziente Code-Struktur und Ressourcennutzung
-`,
+      description: `• Entwicklung einer modernen Unternehmenswebsite mit responsivem Design und interaktiven Elementen
+• Implementation eines sicheren Kontaktformulars für effiziente Kundenanfragen
+• Entwicklung der visuellen Markenidentität und Design aller Geschäftsdokumente
+• SEO-Optimierung mit nachweisbarer Steigerung der Suchmaschinenplatzierung
+• Performance-Optimierung mit 97,5% Lighthouse Score für Core Web Vitals`,
     },
-
     {
       company: "Pflege schwer erkrankten Vaters",
       link: "",
-      badges: ["Karlsruhe"],
-      title: "Betreuer",
+      badges: ["Familienpflege", "Gesundheitsmanagement"],
+      title: "Angehörigenpflege",
       start: "April 2021",
-      end: "jetzt",
-      description: [
-        `-Verwaltung der täglichen Angelegenheiten und des Wohlergehens meines pflegebedürftigen Vaters (Pflegegrad 4)
-        -Unterstützung in administrativen Aufgaben
-  `,
-      ],
+      end: "Heute",
+      description: `• Umfassende Betreuung und Pflege des pflegebedürftigen Vaters (Pflegegrad 4)`,
     },
     {
-      company: "Berufliche Neuorientierung",
+      company: "Berufliche Weiterbildung",
       link: "",
-      badges: ["Karlsruhe,Passau"],
-      title: "Tätigkeiten:",
+      badges: ["Professionelle Entwicklung", "Tech-Ausbildung"],
+      title: "Selbstgesteuertes Lernen",
       start: "Mai 2019",
       end: "April 2021",
-      description: [
-        `-Erlernen neuer Technologien und Programmierkenntnisse durch Online-Kurse und Selbststudium
-        -Zusammenbau von PCs und vertiefende Auseinandersetzung mit Hardware
-        -Weiterbildung in Musikproduktion und Musiktheorie
-        -Tätigkeiten als Barkeeper und Türsteher
-                  `,
-      ],
+      description: `• Erfolgreicher Abschluss des Full-Stack-Entwicklungscurriculums von The Odin Project und freeCodeCamp
+• Entwicklung und Wartung mehrerer persönlicher Projekte zur praktischen Anwendung
+• Erlangung der MongoDB-Entwicklerzertifizierung durch intensives Selbststudium
+• Vertiefung der Hardware-Expertise durch PC-Assemblierung und Systemoptimierung
+• Weiterbildung in Audio Engineering und Musikproduktion
+• Sammlung praktischer Erfahrung in Kundenbetreuung und Teamführung`,
     },
-
     {
       company: "Apples & Berries",
       link: "",
-      badges: ["Reperatur & Verkauf"],
-      title: "Techniker & Verkäufer",
+      badges: ["Technischer Support", "Einzelhandelsmanagement"],
+      title: "Leitender Techniker & Verkaufsspezialist",
       start: "September 2017",
       end: "Juli 2019",
-      description: `-Schulung neuer Teammitglieder in Reparaturtechniken und Kundenservice
-        -Reparatur und Wartung von Smartphones, Tablets und Laptops
-        -Entwicklung und Umsetzung von Verkaufsstrategien zur Umsatzsteigerung
-    
-    `,
+      description: `• Diagnose und Behebung komplexer Probleme bei Smartphones, Tablets und Laptops
+• Management des Inventars
+• Steigerung des monatlichen Umsatzes durch strategischen Verkauf`,
     },
   ],
   experience: [
     {
-      company: "Driving the human",
-      link: " https://2021.rca.ac.uk/students/andra-pop-jurj/",
-      badges: ["Klangdesigner"],
+      company: "Driving the Human",
+      link: "https://2021.rca.ac.uk/students/andra-pop-jurj/",
+      badges: ["Kreativtechnologie", "Sounddesign"],
       title: "Sound Designer",
-      start: "January 2021",
+      start: "Januar 2021",
       end: "Mai 2021",
-
-      description: `-Entwicklung einer einzigartigen Klangkulisse für das Projekt 'Monsters and Ghosts of the Far North'
-        -Präsentation der Arbeiten in verschiedenen Ausstellungen landesweit`,
+      description: `• Entwicklung immersiver Klanglandschaften für die Ausstellung 'Monsters and Ghosts of the Far North'
+• Enge Zusammenarbeit mit internationalen Künstlern und Kuratoren
+• Entwicklung maßgeschneiderter Audioverarbeitungstechniken für atmosphärische Effekte
+• Erfolgreiche Präsentation bei mehreren nationalen Ausstellungen
+• Positive Resonanz in führenden Kunst- und Kulturmedien`,
     },
-
     {
       company: "Mongolische Spracholympiade",
       link: "",
-      badges: ["3x Sieger,1x Zweiter"],
-      title: "Teilnehmer und Sieger",
+      badges: ["Akademische Leistung", "Sprachliche Exzellenz"],
+      title: "Mehrfacher Preisträger",
       start: "2010",
       end: "2013",
-      description:
-        "-Dreifacher Sieger und einmal Zweiter in diversen Spracholympiaden",
+      description: `• Dreimaliger Erstplatzierter in nationalen Sprachwettbewerben
+• Zweiter Platz in der fortgeschrittenen Kategorie des Nationalwettbewerbs
+• Vertretung der Schule bei regionalen und nationalen Veranstaltungen
+• Betreuung und Mentoring von Nachwuchsteilnehmern`,
     },
   ],
 
   projects: [
+    {
+      title: "HumTerra E-Commerce Plattform",
+      techStack: [
+        "Next.js 14",
+        "TypeScript",
+        "Prisma ORM",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "NextAuth.js",
+        "Docker",
+      ],
+      description: `Leitung der Entwicklung einer vollständigen E-Commerce-Plattform mit fortschrittlichen Funktionen wie Echtzeit-Bestandsverwaltung, sicherer Zahlungsabwicklung und automatisierter Auftragsabwicklung. Implementation von Performance-Optimierungen für Subsekunden-Ladezeiten und perfekte Zugänglichkeitswerte.`,
+      metrics: [
+        "95% Lighthouse Performance Score",
+        "50% Reduzierung der Serverkosten",
+        "99,9% Verfügbarkeit",
+      ],
+      logo: false,
+      link: {
+        label: "Projekt ansehen",
+        href: "https://humterra.vercel.app",
+      },
+    },
+    {
+      title: "The Strange Seeds",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Spotify API",
+        "YouTube API",
+        "TailwindCSS",
+        "Framer Motion",
+      ],
+      description: `Eine dynamische Band-Website mit Echtzeit-Konzertauflistungen und automatisiertem Konzertdatum-Management. Integration von Spotify und YouTube APIs für Musik-Streaming und Video-Einbettungen. Features: interaktive Bildergalerie, Social-Media-Integration und Pressekit-Download-Bereich.`,
+      logo: false,
+      link: {
+        label: "",
+        href: "https://thestrangeseeds.com",
+      },
+    },
     {
       title: "Potera Reinigung",
       techStack: [
@@ -228,8 +282,9 @@ export const RESUME_DATA = {
         "Nodemailer",
         "Framer Motion",
         "Accessibility",
+        "Branding",
       ],
-      description: `Entwicklung einer modernen Website für eine Reinigungsfirma mit Kontaktformular und Animationen `,
+      description: `Entwicklung einer modernen Website für eine Reinigungsfirma mit responsivem Design und interaktiven Elementen. Implementierung eines sicheren Kontaktformulars, SEO-Optimierung, sowie Design des Firmenlogos und aller Geschäftsdokumente wie Rechnungen und Briefköpfe.`,
       logo: false,
       link: {
         label: "",
@@ -237,53 +292,20 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Yu-Gi-Oh! Erinnerungsspiel",
-      techStack: ["JavaScript", "CSS", "HTML", "Python", "React"],
-      description: `Ein Memory-Spiel programmiert mit ikonischen und lustigen Yu-Gi-Oh! Karten`,
-      logo: PuzzleLogo,
-      link: {
-        label: "",
-        href: "https://yugioh-memorygame.vercel.app/",
-      },
-    },
-    {
-      title: "Altan Mountain",
-      techStack: ["TypeScript", "CSS", "HTML", "Javascript", "React"],
-      description: ` E-Commerce-Shop mit einem modernen Ansatz zur Produktanzeige, bei dem die Produkte aus dem Bildschirm hervorstechen und interaktiv sind`,
+      title: "3D Portfolio",
+      techStack: [
+        "React",
+        "Three.js",
+        "Framer Motion",
+        "i18next",
+        "TypeScript",
+        "Tailwind CSS",
+      ],
+      description: `Eine immersive 3D-Portfolio-Website mit React Three Fiber, interaktiven 3D-Modellen, Animationen und dynamischer Inselumgebung. Mehrsprachige Unterstützung (EN/DE), 3D-Modell-Optimierung und responsives Design.`,
       logo: false,
       link: {
-        label: "",
-        href: "https://shopping-carti.vercel.app/",
-      },
-    },
-    {
-      title: "Wetter App",
-      techStack: ["CSS", "HTML", "Javascript"],
-      description: ` Eine Wetter-App, welche den aktuellen Standort des Benutzers abruft und automatisch das aktuelle Wetter anzeigt, mit der Verwendung der OpenCage Data API `,
-      logo: false,
-      link: {
-        label: "",
-        href: "https://chingis-weather-app.vercel.app/",
-      },
-    },
-    {
-      title: "Lebenslauf/CV App",
-      techStack: ["CSS", "HTML", "Javascript", "React"],
-      description: `Eine Webanwendung, für ein einfaches erstellen von Lebensläufen`,
-      logo: false,
-      link: {
-        label: "",
-        href: "https://cv-application-navy-delta.vercel.app/",
-      },
-    },
-    {
-      title: "Etch-A-Sketch",
-      techStack: ["CSS", "HTML", "Javascript"],
-      description: `Der nostalgischen Kinderspielzeugleinwand nachempfunden, mit einer verstellbaren Leinwandgröße, diversen Malwerkzeugen sowie einer Speicherfunktion`,
-      logo: false,
-      link: {
-        label: "",
-        href: "https://codetwentyfive.github.io/Etch-A-Sketch/",
+        label: "In Entwicklung",
+        href: "https://chingis.dev",
       },
     },
   ],
