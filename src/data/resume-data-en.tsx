@@ -120,7 +120,7 @@ export const RESUME_DATA = {
     },
     {
       school: "Studienkolleg Munich",
-      degree: "Fachabitur",
+      degree: "Fachabitur 2,2",
       start: "October 2013",
       end: "July 2014",
     },
@@ -159,7 +159,7 @@ export const RESUME_DATA = {
       link: "https://www.poterareinigung.de",
       badges: ["Full Stack Development", "Branding"],
       title: "Freelance Web Developer",
-      start: "August 2024",
+      start: "June 2024",
       end: "October 2024",
       description: `-Development of a modern website for a cleaning company with responsive design and interactive elements
 -Implementation of a secure contact form for efficient processing of customer inquiries
@@ -169,15 +169,15 @@ export const RESUME_DATA = {
 -Optimization of website performance through efficient code structure and resource utilization`,
     },
     {
-      company: "Care for severely ill father",
+      company: "Family Caregiver",
       link: "",
       badges: ["Karlsruhe"],
       title: "Caregiver",
       start: "April 2021",
-      end: "now",
+      end: "",
       description: [
-        `-Managing daily affairs and well-being of my care-dependent father (Pflegegrad 4)
-        -Assistance with administrative tasks
+        `-Managing daily affairs and well-being of my care-dependent father.
+        
   `,
       ],
     },

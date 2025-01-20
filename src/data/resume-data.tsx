@@ -120,7 +120,7 @@ export const RESUME_DATA = {
     },
     {
       school: "Studienkolleg München",
-      degree: "Fachabitur",
+      degree: "Fachabitur 2,2",
       start: "Oktober 2013",
       end: "Juli 2014",
     },
@@ -168,7 +168,7 @@ export const RESUME_DATA = {
 • Performance-Optimierung mit 97,5% Lighthouse Score für Core Web Vitals`,
     },
     {
-      company: "Pflege schwer erkrankten Vaters",
+      company: "Angehörigenpflege",
       link: "",
       badges: ["Familienpflege", "Gesundheitsmanagement"],
       title: "Angehörigenpflege",
