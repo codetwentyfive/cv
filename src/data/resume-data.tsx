@@ -194,7 +194,7 @@ export const RESUME_DATA = {
       company: "Apples & Berries",
       link: "",
       badges: ["Technischer Support", "Einzelhandelsmanagement"],
-      title: "Leitender Techniker & Verkaufsspezialist",
+      title: "Techniker & Verkäufer",
       start: "September 2017",
       end: "Juli 2019",
       description: `• Diagnose und Behebung komplexer Probleme bei Smartphones, Tablets und Laptops

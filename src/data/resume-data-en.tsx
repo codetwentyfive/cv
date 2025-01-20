@@ -151,7 +151,7 @@ export const RESUME_DATA = {
       description: `• Developed modern band website using Next.js and TypeScript with an improvement in load times
 • Integrated Spotify and YouTube APIs for seamless media streaming
 • Implemented automated concert management system reducing manual updates by 80%
-• Optimized SEO resulting in 50% increase in organic traffic
+• Optimized SEO resulting in an increase in organic traffic
 • Created responsive image gallery with lazy loading and WebP optimization`,
     },
     {
@@ -199,7 +199,7 @@ export const RESUME_DATA = {
       company: "Apples & Berries",
       link: "",
       badges: ["Technical Support", "Retail Management"],
-      title: "Lead Technician & Sales Specialist",
+      title: "Technician & Sales",
       start: "September 2017",
       end: "July 2019",
       description: `• Diagnosed and repaired complex issues in smartphones, tablets, and laptops
