@@ -65,13 +65,14 @@
     --ring: 216 12.2% 83.9%;
   }
 }
-@media print {
-  .print-force-new-page {
-    page-break-before: always;
-  } /* page-break-after works, as well */
+
+/* Hide specific elements when not printing */
+.pdf-cover, .one-page-summary {
+  display: none;
 }
-.pfp{
-  transform: scale(1.5)
+
+.pfp {
+  transform: scale(1.5);
 }
 
 @layer base {
@@ -80,5 +81,254 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Print Media Query - All print styles consolidated here */
+@media print {
+  /* Basic page setup */
+  @page {
+    margin: 0.4cm;
+    size: A4;
+  }
+  
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* General print optimizations for all print modes */
+  .container {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+  
+  .print\:hidden {
+    display: none !important;
+  }
+  
+  /* Standard print spacing */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.4rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+  
+  p, li {
+    margin-bottom: 0 !important;
+    line-height: 1.2 !important;
+  }
+  
+  .card {
+    margin-bottom: 0.4rem !important;
+    break-inside: avoid;
+  }
+  
+  section {
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .space-y-3 {
+    margin-top: 0.4rem !important;
+  }
+  
+  .p-3 {
+    padding: 0.4rem !important;
+  }
+  
+  .mb-3 {
+    margin-bottom: 0.2rem !important;
+  }
+  
+  .pb-3 {
+    padding-bottom: 0.2rem !important;
+  }
+  
+  /* Print font sizes */
+  .print\:text-xs {
+    font-size: 0.65rem !important;
+    line-height: 1.1 !important;
+  }
+  
+  .print\:text-sm {
+    font-size: 0.75rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* Grid layouts for print */
+  .print\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  
+  /* Badge optimization */
+  .badge {
+    padding: 0.1rem 0.2rem !important;
+    margin: 0.1rem !important;
+    font-size: 8px !important;
+  }
+  
+  /* Page break controls */
+  .print-force-new-page {
+    page-break-before: always;
+    break-before: page;
+  }
+  
+  /* PDF Cover Styles */
+  .pdf-cover {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    page-break-after: always !important;
+    height: 100% !important;
+  }
+  
+  .pdf-cover object {
+    height: 280mm !important;
+    width: 100% !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+  
+  /* One-page summary styles */
+  .one-page-summary {
+    margin-bottom: 0 !important;
+    page-break-after: always !important;
+  }
+  
+  /* ===== CONDITIONAL PRINT STYLES ===== */
+  
+  /* Compact Print Mode */
+  html.compact-print {
+    font-size: 85%;
+  }
+  
+  html.compact-print .container {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  html.compact-print .section-content {
+    gap: 0.5rem !important;
+  }
+  
+  html.compact-print .hide-print {
+    display: none !important;
+  }
+  
+  html.compact-print .card {
+    margin-bottom: 0.15rem !important;
+    padding: 0.25rem !important;
+  }
+  
+  html.compact-print section {
+    margin-bottom: 0.15rem !important;
+  }
+  
+  html.compact-print p, 
+  html.compact-print li {
+    line-height: 1.05 !important;
+  }
+  
+  html.compact-print .p-3,
+  html.compact-print .print\:p-2 {
+    padding: 0.15rem !important;
+  }
+  
+  html.compact-print .space-y-1 {
+    margin-top: 0.15rem !important;
+  }
+  
+  html.compact-print .pb-3,
+  html.compact-print .print\:pb-1 {
+    padding-bottom: 0.1rem !important;
+  }
+  
+  html.compact-print .print\:text-xs {
+    font-size: 0.58rem !important;
+    line-height: 1 !important;
+  }
+  
+  html.compact-print .print\:text-sm {
+    font-size: 0.68rem !important;
+    line-height: 1.05 !important;
+  }
+  
+  /* PDF Cover Control */
+  html.show-pdf-cover .pdf-cover {
+    display: block !important;
+    page-break-after: always;
+    break-after: page;
+  }
+  
+  html:not(.show-pdf-cover) .pdf-cover {
+    display: none !important;
+  }
+  
+  /* One-pager Summary Control */
+  html.show-one-pager .one-page-summary {
+    display: block !important;
+    page-break-after: always;
+    break-after: page;
+  }
+  
+  html:not(.show-one-pager) .one-page-summary {
+    display: none !important;
+  }
+  
+  /* Optimize Print Control */
+  html.optimize-print {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  
+  html.optimize-print * {
+    print-color-adjust: exact !important;
+  }
+  
+  html.optimize-print img, 
+  html.optimize-print svg {
+    max-resolution: 300dpi;
+    image-resolution: 300dpi;
+  }
+  
+  html.optimize-print .print-force-new-page {
+    page-break-before: always;
+    break-before: page;
+  }
+  
+  html.optimize-print .pdf-cover,
+  html.optimize-print .one-page-summary {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+  
+  /* Section Break Control */
+  html.print-section-breaks .section-container {
+    page-break-before: always;
+    break-before: page;
+  }
+  
+  /* Hide Main Content Control */
+  html.hide-main-content .main-content {
+    display: none !important;
+  }
+  
+  /* Extra Info Control */
+  html.hide-extra-info .hide-on-compact {
+    display: none !important;
+  }
+  
+  html.hide-extra-info .expandable-when-extra-hidden {
+    grid-column: span 2 / span 2 !important;
   }
 }

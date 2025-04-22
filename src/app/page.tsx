@@ -6,11 +6,62 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
 import { Section } from "@/components/ui/section";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon, MailIcon, PhoneIcon, Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/project-card";
+import { OnePageSummary } from "@/components/one-page-summary";
+import { PDFViewer } from "@/components/pdf-viewer";
+import { PrintDrawer } from "@/components/print-drawer";
 
-const loadResumeData = (language) => {
+// Define type for resume data
+interface ResumeData {
+  name: string;
+  initials: string;
+  location: string;
+  locationLink: string;
+  avatarUrl: string;
+  personalWebsiteUrl: string;
+  about?: string;
+  summary?: string;
+  relocation: string;
+  nationality: string;
+  permit: string;
+  workpermit: string;
+  birthday: string;
+  workheader: string;
+  educationheader: string;
+  projectsheader: string;
+  experiencesheader: string;
+  programmingskillsheader: string;
+  otherskillsheader: string;
+  languagesheader: string;
+  contact: {
+    email: string;
+    tel: string;
+    social: readonly {
+      name: string;
+      url: string;
+      icon: any;
+    }[];
+  };
+  skills: readonly string[];
+  otherSkills: readonly string[];
+  languages: readonly {
+    language: string;
+    proficiency: string;
+  }[];
+  education: readonly {
+    school: string;
+    degree: string;
+    start: string;
+    end: string;
+  }[];
+  work: readonly any[];
+  experience: readonly any[];
+  projects: readonly any[];
+}
+
+const loadResumeData = (language: string) => {
   return language === "en"
     ? import("@/data/resume-data-en")
     : import("@/data/resume-data");
@@ -18,7 +69,9 @@ const loadResumeData = (language) => {
 
 export default function Page() {
   const [language, setLanguage] = useState("de");
-  const [RESUME_DATA, setResumeData] = useState(null);
+  const [RESUME_DATA, setResumeData] = useState<ResumeData | null>(null);
+  const [showPrintableVersion, setShowPrintableVersion] = useState(false);
+  const [hidePrintable, setHidePrintable] = useState(false);
 
   useEffect(() => {
     loadResumeData(language).then((data) => setResumeData(data.RESUME_DATA));
@@ -30,16 +83,68 @@ export default function Page() {
     loadResumeData(newLanguage).then((data) => setResumeData(data.RESUME_DATA));
   };
 
+  const handleDirectPrint = () => {
+    // Add all print optimization classes at once
+    document.documentElement.classList.add('compact-print');
+    document.documentElement.classList.add('optimize-print');
+    document.documentElement.classList.add('print-section-breaks');
+    
+    // Show cover page if user prefers it in settings
+    if (localStorage.getItem('showCover') === 'true') {
+      document.documentElement.classList.add('show-pdf-cover');
+    }
+    
+    // Show one-pager if user prefers it in settings
+    if (localStorage.getItem('showOnePager') === 'true') {
+      document.documentElement.classList.add('show-one-pager');
+    }
+    
+    // Give time for classes to apply before printing
+    setTimeout(() => {
+      window.print();
+      
+      // Remove classes after printing
+      setTimeout(() => {
+        document.documentElement.classList.remove('compact-print');
+        document.documentElement.classList.remove('optimize-print');
+        document.documentElement.classList.remove('print-section-breaks');
+        document.documentElement.classList.remove('show-pdf-cover');
+        document.documentElement.classList.remove('show-one-pager');
+      }, 500);
+    }, 300);
+  };
+
   if (!RESUME_DATA) return <div>Loading...</div>;
 
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-4 md:p-16">
-      <div className="absolute right-4 top-4 print:hidden">
+      <div className="absolute right-4 top-4 print:hidden flex gap-2 flex-wrap justify-end">
         <Button onClick={toggleLanguage}>
           Switch to {language === "de" ? "English" : "German"}
         </Button>
+        <Button onClick={() => setShowPrintableVersion(!showPrintableVersion)}>
+          {showPrintableVersion ? "Hide" : "Show"} PDF
+        </Button>
+        <Button onClick={() => setHidePrintable(!hidePrintable)} variant="outline">
+          {hidePrintable ? "Show" : "Hide"} Printable Version
+        </Button>
+        <Button onClick={handleDirectPrint} variant="secondary" className="flex items-center gap-2">
+          <Printer className="h-4 w-4" /> Print Optimized
+        </Button>
       </div>
-      <section className="mx-auto w-full max-w-2xl space-y-3 bg-white print:space-y-2">
+      
+      {/* PDF Viewer (only visible when showPrintableVersion is true) */}
+      {showPrintableVersion && !hidePrintable && (
+        <PDFViewer 
+          pdfPath="/LebenslaufPDF.pdf" 
+          showInPrint={true}
+        />
+      )}
+      
+      {/* One Page Summary (only visible when printing) */}
+      {!hidePrintable && <OnePageSummary resumeData={RESUME_DATA} />}
+      
+      <section className={`mx-auto w-full max-w-2xl space-y-3 bg-white print:space-y-2 ${hidePrintable ? 'hidden print:hidden' : ''}`}>
         <div className="flex items-start justify-between">
           <div className="flex-1">
             <h1 className="text-2xl font-bold mb-1">{RESUME_DATA.name}</h1>
@@ -147,7 +252,7 @@ export default function Page() {
                       {work.company}
                     </a>
                     <span className="inline-flex gap-x-1">
-                      {work.badges.map((badge) => (
+                      {work.badges.map((badge: string) => (
                         <Badge variant="secondary" className="align-middle text-[10px]" key={badge}>
                           {badge}
                         </Badge>
@@ -192,7 +297,6 @@ export default function Page() {
                 description={project.description}
                 tags={project.techStack}
                 link={"link" in project ? project.link.href : undefined}
-                className="h-full"
               />
             ))}
           </div>
@@ -236,6 +340,7 @@ export default function Page() {
           </div>
         </Section>
       </section>
+      
       <CommandMenu
         links={[
           {
@@ -248,6 +353,9 @@ export default function Page() {
           })),
         ]}
       />
+      
+      {/* Print Button */}
+      <PrintDrawer />
     </main>
   );
 }
