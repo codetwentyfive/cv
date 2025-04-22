@@ -127,6 +127,21 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "beWirken",
+      link: "https://www.bewirken.org",
+      badges: ["IT-Leitung", "Full Stack Entwicklung"],
+      title: "Full Stack Entwickler",
+      start: "März 2025",
+      end: "Heute",
+      description: `• Leitung der IT-Operationen und Entwicklungsinitiativen im gesamten Unternehmen
+• Wartung und Verbesserung der Unternehmens-WordPress-Website, Sicherstellung optimaler Leistung und Sicherheit
+• Entwicklung und Implementierung maßgeschneiderter interner Tools, einschließlich Word-Makros für effiziente Dokumentenverarbeitung
+• Erstellung spezialisierter Dateiverwaltungslösungen gemäß den deutschen DSGVO-Vorschriften
+• Verwaltung von Administratoraufgaben für die gesamte IT-Infrastruktur und Systeme
+• Integration von Cloud-Speicherlösungen und Implementierung moderner Webtechnologien
+• Nutzung von PHP, JavaScript, React und Next.js für die Entwicklung interner Tools`,
+    },
+    {
       company: "HumTerra",
       link: "https://humterra.vercel.app",
       badges: ["Leitender Entwickler", "E-Commerce Plattform"],

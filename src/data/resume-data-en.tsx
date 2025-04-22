@@ -127,6 +127,21 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "beWirken",
+      link: "https://www.bewirken.org",
+      badges: ["Head of IT", "Full Stack Development"],
+      title: "Full Stack Developer",
+      start: "March 2025",
+      end: "Present",
+      description: `• Lead IT operations and development initiatives across the organization
+• Maintain and enhance the company's WordPress website, ensuring optimal performance and security
+• Develop and implement custom internal tools including Word macros for efficient document processing
+• Create specialized file management solutions compliant with German DSGVO regulations
+• Manage administrator responsibilities across IT infrastructure and systems
+• Integrate cloud storage solutions and implement modern web technologies
+• Utilize PHP, JavaScript, React, and Next.js for internal tool development`,
+    },
+    {
       company: "HumTerra",
       link: "https://humterra.vercel.app",
       badges: ["Lead Developer", "E-commerce Platform"],
