@@ -1,6 +1,6 @@
-# Use the official lightweight Node.js 18 image.
+# Use the official lightweight Node.js 24 image.
 # https://hub.docker.com/_/node
-FROM node:18-slim
+FROM node:24-slim
 
 # Create and change to the app directory.
 WORKDIR /usr/src/app
@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install all dependencies.
-RUN npm install
+RUN npm ci
 
 # Copy local code to the container image.
 COPY . .
